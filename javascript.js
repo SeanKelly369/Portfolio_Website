@@ -3,7 +3,7 @@ let textFlag = true;
 function growShrinkNav() {
   let Logo = document.getElementById("logo_header");
   //console.log(Logo);
-  if (document.body.scrollTop > 90 || 			 document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 20) {
 		textFlag = false;
     Logo.style.width = '37px';
 		innerNav.style.marginTop = '.5%';
@@ -69,31 +69,60 @@ function navChange() {
 function showWatch() {
 	let watchDetails = document.getElementById("watchDetails").style.display = 'block';
 	let overlayOpen = document.getElementById('overlay').style.display = 'block';
-	overlayOpen.style.transition = 'all ease .5s';
+	document.getElementById('overlay').style.transition = 'all ease .5s';
 }
 
 //Open window showing details about Biopodz
 function showBiopodz() {
 	let biopodzDetails = document.getElementById("biopodzDetails").style.display = 'block';
 	let overlayOpen = document.getElementById('overlay').style.display = 'block';
-	overlayOpen.style.transition = 'all ease .5s';
+	document.getElementById('overlay').style.transition = 'all ease .5s';
 }
 
-//Open window showing details about Biopodz
+//Open window showing details about Epee football boots
 function showEpee() {
 	let epeeDetails = document.getElementById("epeeDetails").style.display = 'block';
 	let overlayOpen = document.getElementById('overlay').style.display = 'block';
-	overlayOpen.style.transition = 'all ease .5s';
+	document.getElementById('overlay').style.transition = 'all ease .5s';
 }
 
+//Open window showing details about Cozmet
+function showCozmet() {
+	let cozmetDetails = document.getElementById("cosmetDetails").style.display = 'block';
+	let overlayOpen = document.getElementById('overlay').style.display = 'block';
+	document.getElementById('overlay').style.transition = 'all ease .5s';
+}
+
+//Open window showing details about Epee football Audi pen
+function showEpee() {
+	let epeeDetails = document.getElementById("epeeDetails").style.display = 'block';
+	let overlayOpen = document.getElementById('overlay').style.display = 'block';
+	document.getElementById('overlay').style.transition = 'all ease .5s';
+}
+
+//Open window showing details about Sharpwave
+function showSharpwave() {
+	let sharpwaveDetails = document.getElementById("sharpwaveDetails").style.display = 'block';
+	let overlayOpen = document.getElementById('overlay').style.display = 'block';
+	document.getElementById('overlay').style.transition = 'all ease .5s';
+}
+
+//Open window showing details about Sharpwave
+function showHitik() {
+	document.getElementById("hitikDetails").style.display = 'block';
+	document.getElementById('overlay').style.display = 'block';
+	document.getElementById('overlay').style.transition = 'all ease .5s';
+}
 
 //Close window
 function hideProject() {
-	// let close = document.getElementById('overlay').style.display = 'none';
-	let closeWatch = document.getElementById('watchDetails').style.display = 'none';
-  document.getElementById("biopodzDetails").style.display = 'none';
-  document.getElementById("epeeDetails").style.display= 'none';
+
+	document.getElementById('watchDetails').style.display = 'none';
+  document.getElementById('biopodzDetails').style.display = 'none';
+  document.getElementById('epeeDetails').style.display= 'none';
+  document.getElementById('penDetails').style.display= 'none';
   document.getElementById('overlay').style.display = 'none';
-	// close.style.transition = 'all ease .5s';
-  // closeWatch.style.transition = 'all ease .5s';
+  document.getElementById('cosmetDetails').style.display = 'none';
+  document.getElementById('sharpwaveDetails').style.display = 'none';
+  document.getElementById('hitikDetails').style.display = 'none';
 }

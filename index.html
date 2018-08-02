@@ -10,10 +10,10 @@
   <link rel="shortcut icon" href="graphics/SK-logo_60.png" />
 
   <link rel="stylesheet" type="text/css" href="/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
   <script type="text/javascript" src="/javascript.js"></script>
 
-  <title>Sean Kelly Design</title>
+  <title>Sean Kelly Software & Product Design</title>
 </head>
 
 <body onscroll="growShrinkNav()" onresize="navChange()">
@@ -25,7 +25,9 @@
       <div id="nav_links">
         <div id="innerNav">
           <div>Work</div>
-          <div>Blog</div>
+          <div>
+            <a href="http://www.kelly3d.com/wp" target="_blank">Blog</a>
+          </div>
           <div>Hobbies</div>
           <div>About Me</div>
         </div>
@@ -39,28 +41,77 @@
     </div>
   </segment>
 
-<div onclick="hideProject()" id="overlay"></div>
+  <div onclick="hideProject()" id="overlay"></div>
   <div id="content">
 
     <div id="watchDetails">
-        <img class="large_images" src="graphics/watch/render_filmic4.jpg" alt="watch filmic render 4">
-        <img class="large_images" src="graphics/watch/render_filmic2.jpg" alt="watch filmic render 2">
-        <img class="large_images" src="graphics/watch/render_filmic3.jpg" alt="watch filmic render 3">
-        <img class="large_images" src="graphics/watch/benchmarkingA.jpg" alt="benchmarking">
-        <img class="large_images" src="graphics/watch/watch_sketchbook13.jpg" alt="rendered sketches">
+      <span onclick="hideProject()" class="close">&times;</span>
+      <img class="large_images" src="graphics/watch/render_filmic4.jpg" alt="watch filmic render 4">
+      <img class="large_images" src="graphics/watch/render_filmic2.jpg" alt="watch filmic render 2">
+      <img class="large_images" src="graphics/watch/render_filmic3.jpg" alt="watch filmic render 3">
+      <img class="large_images" src="graphics/watch/benchmarkingA.jpg" alt="benchmarking">
+      <img class="large_images" src="graphics/watch/watch_sketchbook13.jpg" alt="rendered sketches">
+    </div>
+
+    <div id="cosmetDetails">
+      <span onclick="hideProject()" class="close">&times;</span>
+      <video width="99%" controls>
+        <source src="graphics/Cosmet/Cozmet_Sean.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+      <img class="large_images" src="graphics/Cosmet/cozmet.png" alt="Cosmet for cosmetic products">
+
+    </div>
+
+    <div id="hitikDetails">
+          <span onclick="hideProject()" class="close">&times;</span>
+      <img class="large_images" src="graphics/Hi-Tik/Hi-tik_mouse_1260.jpg" alt="Hi-tik mouse">
+      <img class="large_images" src="graphics/Hi-Tik/Final-renders.jpg" alt="Hi-tik mouse rendered views">
+      <img class="large_images" src="graphics/Hi-Tik/Rationale.jpg" alt="Product rationale">
+      <img class="large_images" src="graphics/Hi-Tik/later_sketches_for_biopodz_1260.jpg" alt="Biopodz sketches">
+      <img class="large_images" src="graphics/Hi-Tik/Exploded.jpg" alt="Exploded render">
+      <img class="large_images" src="graphics/Hi-Tik/Exploded2.jpg" alt="Exploded render 2">
+      <img class="large_images" src="graphics/Hi-Tik/Sketched-concepts.jpg" alt="Concept sketches">
+      <img class="large_images" src="graphics/Hi-Tik/Sculpt-concepts.jpg" alt="Sculpted sketches">
+
     </div>
 
     <div id="biopodzDetails">
-        <img class="large_images" src="graphics/Biopodz/logo-for-behance.png" alt="Biopodz logo">
-        <img class="large_images" src="graphics/Biopodz/about-biopodz.png" alt="About Biopodz">
-        <img class="large_images" src="graphics/Biopodz/toons4.png" alt="Biopodz cartoon characters">
-        <img class="large_images" src="graphics/Biopodz/later_sketches_for_biopodz_1260.jpg" alt="Biopodz sketches">
-        <img class="large_images" src="graphics/Biopodz/calendar2.jpg" alt="Biopodz calendar">
-        <img class="large_images" src="graphics/Biopodz/school1.jpg" alt="Biopodz disassembled in school">
+          <span onclick="hideProject()" class="close">&times;</span>
+      <img class="large_images" src="graphics/Biopodz/logo-for-behance.png" alt="Biopodz logo">
+      <img class="large_images" src="graphics/Biopodz/about-biopodz.png" alt="About Biopodz">
+      <img class="large_images" src="graphics/Biopodz/toons4.png" alt="Biopodz cartoon characters">
+      <img class="large_images" src="graphics/Biopodz/later_sketches_for_biopodz_1260.jpg" alt="Biopodz sketches">
+      <img class="large_images" src="graphics/Biopodz/calendar2.jpg" alt="Biopodz calendar">
+      <img class="large_images" src="graphics/Biopodz/school1.jpg" alt="Biopodz disassembled in school">
+    </div>
+
+    <div id="sharpwaveDetails">
+          <span onclick="hideProject()" class="close">&times;</span>
+      <div id="sharwaveCenter">
+        <video id="sharwavePlayer" controls>
+          <source src="graphics/SharpWave/SharpWave.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+
+      <img class="large_images" src="graphics/SharpWave/sharpwave.png" alt="Sharp Wave audio player">
+
     </div>
 
     <div id="epeeDetails">
-        <img class="large_images" src="graphics/Epee/Epee_graphics.jpg" alt="Epee soccer boots">
+      <span onclick="hideProject()" class="close">&times;</span>
+      <img class="large_images" src="graphics/Epee/Epee_graphics.jpg" alt="Epee soccer boots">
+    </div>
+
+    <div id="penDetails">
+      <span onclick="hideProject()" class="close">&times;</span>
+      <img class="large_images" src="graphics/Pen/A_Introduction.jpg" alt="Audi Waldmann pen logos">
+      <img class="large_images" src="graphics/Pen/Case_White.jpg" alt="Audi/Waldmann pen with case">
+      <img class="large_images" src="graphics/Pen/pens_close_up.jpg" alt="Audi pens closeup">
+      <img class="large_images" src="graphics/Pen/pens_drawings_touched_up3.jpg" alt="Pen drawings">
+      <img class="large_images" src="graphics/Pen/case_sketches.jpg" alt="Case sketches">
     </div>
 
     <div id="outer-grid">
@@ -81,6 +132,40 @@
         </div>
       </div>
 
+      <div class="container">
+        <div id="cosmet">
+          <div class="image_info">
+            <img id="sharpwave630" class="imageThumbs" src="graphics/index_graphics/sharpwave_630.jpg"></img alt="analog watch design">
+          </div>
+          <div class="middle">
+            <div class="mask">
+              <h2 id="test">SharpWave</h2>
+              <p class="desc">An Android audio playing application.</p>
+            </div>
+
+            <div onclick="showSharpwave();" class="text" id="sharpwave">CLICK FOR MORE INFO</div>
+          </div>
+        </div>
+      </div>
+      <!-- end watch container -->
+
+
+      <div class="container">
+        <div id="cosmet">
+          <div class="image_info">
+            <img id="cosmet630" class="imageThumbs" src="graphics/index_graphics/cozmet_630.jpg"></img alt="analog watch design">
+          </div>
+          <div class="middle">
+            <div class="mask">
+              <h2 id="test">Cozmet</h2>
+              <p class="desc">An application containing information on new cosmetic products and the expiry date of current products owned by the user.</p>
+            </div>
+
+            <div onclick="showCozmet();" class="text" id="cosmet">CLICK FOR MORE INFO</div>
+          </div>
+        </div>
+      </div>
+      <!-- end watch container -->
 
       <div class="container">
         <div id="watch">
@@ -92,12 +177,13 @@
               <h2 id="test">Bad News Watch</h2>
               <p class="desc">Using a custom built Indian bike, titled Bad News this watch design matches the bike's design.</p>
             </div>
-            <!-- end mask -->
 
             <div onclick="showWatch();" class="text" id="watch">CLICK FOR MORE INFO</div>
           </div>
         </div>
       </div>
+      <!-- end watch container -->
+
 
       <div class="container">
         <div id="watch">
@@ -116,15 +202,87 @@
         </div>
       </div>
 
-      <div>3</div>
-      <div>4</div>
+      <div class="container">
+        <div id="watch">
+          <div class="image_info">
+            <img id="badWatch" class="imageThumbs" src="graphics/index_graphics/audi_pen_630.jpg"></img alt="Audi pen">
+          </div>
+          <div class="middle">
+            <div class="mask">
+              <h2 id="test">Audi/Waldmann pen</h2>
+              <p class="desc">A complementary Waldmann pen for the purchase of an Audi A8</p>
+            </div>
+            <!-- end mask -->
+
+            <div onclick="showEpee();" class="text" id="epee">CLICK FOR MORE INFO</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div id="hitikMouse">
+          <div class="image_info">
+            <img id="hitikmouse" class="imageThumbs" src="graphics/index_graphics/mouse_630.jpg"></img alt="Audi pen">
+          </div>
+          <div class="middle">
+            <div class="mask">
+              <h2 id="test">Hi-Tik Mouse</h2>
+              <p class="desc">A computer mouse designed to help alleviate joint pain and repetitive strain injury</p>
+            </div>
+            <!-- end mask -->
+
+            <div onclick="showHitik();" class="text" id="hitik">CLICK FOR MORE INFO</div>
+          </div>
+        </div>
+      </div>
+
       <div>5</div>
       <div>6</div>
     </div>
 
   </div>
 
-  <div id="footer">Footer goes here</div>
+  <div id="footer">
+    <div id="footer-outer-grid">
+      <div id="footer-inner-grid">
+        <div></div>
+
+        <div>
+          <div id="footer-icons">
+            <div><a href="mailto:sean@kelly3d.com" target="_blank">
+              <img id="icons" class="imageThumbs" src="graphics/icon_links/Email.png"></img alt="Email"></a>
+            </div>
+
+            <div>
+              <a href="https://www.linkedin.com/in/sean-kelly-0233b113/" target="_blank">
+              <img id="icons" class="imageThumbs" src="graphics/icon_links/LinkedIn.png"></img alt="LinkedIn"></a>
+            </div>
+
+            <div>
+              <a href="https://github.com/SeanKelly369" target="_blank">
+              <img id="icons" class="imageThumbs" src="graphics/icon_links/Github.png"></img alt="Github"></a>
+            </div>
+
+            <div>
+              <a href="https://www.freecodecamp.org/fcc2e0990a1-5740-49d9-8eb2-7ec40a488947" target="_blank">
+              <img id="icons" class="imageThumbs" src="graphics/icon_links/FreeCodeCamp.png"></img alt="Free Code Camp"></a>
+
+            </div>
+            <div>
+              <a href="https://www.pinterest.ie/seankell2000/" target="_blank">
+              <img id="icons" class="imageThumbs" src="graphics/icon_links/Pinterest.png"></img alt="Pinterest"></a>
+            </div>
+
+            <div>
+              <a href="https://www.behance.net/Sean_Kelly" target="_blank">
+              <img id="icons" class="imageThumbs" src="graphics/icon_links/Behance.png"></img alt="Behance"></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 </body>
