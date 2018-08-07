@@ -16,7 +16,7 @@
   <title>Sean Kelly Software & Product Design</title>
 </head>
 
-<body onscroll="growShrinkNav()" onresize="navChange()">
+<body onscroll="growShrinkNav()" onresize="sizeChange();">
 
 
   <!-- Navbar code -->
@@ -24,17 +24,26 @@
     <div id="nav">
       <div id="nav_links">
         <div id="innerNav">
-          <div>Work</div>
           <div>
-            <a href="http://www.kelly3d.com/wp" target="_blank">Blog</a>
+            <a href='index.html'> <img id="navIcon1" src="graphics/icon_links/Portfolio.png" alt="Sean Kelly's Portfolio"></a>
           </div>
-          <div>Hobbies</div>
-          <div>About Me</div>
+          <div>
+            <a> <img id="navIcon2" onclick="showAboutMeDetails();" src="graphics/icon_links/aboutMe.png" alt="About Me, Sean Kelly"></a>
+          </div>
+          <div>
+            <a> <img id="navIcon3" onclick="showHobbies();" src="graphics/icon_links/Hobbies.png" alt="Hobbies of Sean Kelly"></a>
+          </div>
+          <div>
+            <a alt="Hobbies of Sean Kelly" href='http://www.kelly3d.com/wp' target="_blank"> <img id="navIcon4" src="graphics/icon_links/Blog.png" ></a>
+          </div>
+          <div>
+            <a alt="Sean Kelly CV" href="/graphics/icon_links/Sean_Kelly_CV_2018P.pdf" download> <img id="navIcon5" src="graphics/icon_links/cv.png"</a>
+          </div>
         </div>
       </div>
 
       <div id="logo">
-        <a href="#" id="navbar_logo">
+        <a href="index.html" id="navbar_logo">
               <img id="logo_header"  src="graphics/logo.png" alt="kelly3d">
             </a>
       </div>
@@ -61,24 +70,144 @@
       </video>
 
       <img class="large_images" src="graphics/Cosmet/cozmet.png" alt="Cosmet for cosmetic products">
+    </div>
+
+    <div id="thesisDetails">
+      <span onclick="hideProject()" class="close">&times;</span>
+      <div id="thesisGrid">
+        <div id="menu">
+        <div id="menu2">
+          <div id="cover" onclick="ScrollTo('page1')">Cover</div>
+          <div id="abstract" onclick="ScrollTo('page2')" >Abstract</div>
+          <div id="acknowledgement" onclick="ScrollTo('page3')" >Acknowledgement</div>
+          <div id="listOfFigures" onclick="ScrollTo('page5')" >List of Figures</div>
+          <div id="introduction" onclick="ScrollTo('page6')" >Introduction</div>
+          <div id="chapterOne" onclick="ScrollTo('page9')" >Chapter One</div>
+          <div id="chapterTwo" onclick="ScrollTo('page20')" >Chapter Two</div>
+          <div id="chapterThree" onclick="ScrollTo('page35')" >Chapter Three</div>
+          <div id="conclusion" onclick="ScrollTo('page44')" >Conclusion</div>
+          <div id="listOfFigures" onclick="ScrollTo('page47')" >List of References</div>
+
+        </div>
+      </div>
+        <div id="thesisPages">
+          <img class="pages" id="page1" src="graphics/Thesis/i-cover.png">
+          <img class="pages" id="page2" src="graphics/Thesis/ii-abstract.png">
+          <img class="pages" id="page3" src="graphics/Thesis/acknowledgement.png">
+          <img class="pages" id="page4" src="graphics/Thesis/iv-Table-of-contents.png">
+
+          <img class="pages" id="page5" src="graphics/Thesis/v-list_of_figures.png">
+          <img class="pages" id="page6" src="graphics/Thesis/vi-Introduction.png">
+          <img class="pages" id="page7" src="graphics/Thesis/vii-Introduction-pg2.png">
+          <img class="pages" id="page8" src="graphics/Thesis/viii-Introduction-pg3.png">
+          <img class="pages" id="page9" src="graphics/Thesis/1-Chapter-one.png">
+          <img class="pages" id="page10" src="graphics/Thesis/2-Chapter-one-introduction.png">
+          <img class="pages" id="page11" src="graphics/Thesis/3-Chapter-one-pg1.png">
+          <img class="pages" id="page12" src="graphics/Thesis/4-Chapter-one-pg2.png">
+          <img class="pages" id="page13" src="graphics/Thesis/5-Chapter-one-pg3.png">
+          <img class="pages" id="page14" src="graphics/Thesis/6-Chapter-one-pg4.png">
+          <img class="pages" id="page15" src="graphics/Thesis/7-Chapter-one-pg5.png">
+          <img class="pages" id="page16" src="graphics/Thesis/8-Chapter-one-pg6.png">
+          <img class="pages" id="page17" src="graphics/Thesis/9-Chapter-one-pg7.png">
+          <img class="pages" id="page18" src="graphics/Thesis/10-Chapter-one-pg8.png">
+          <img class="pages" id="page19" src="graphics/Thesis/11-Chapter-one-pg9.png">
+          <img class="pages" id="page20" src="graphics/Thesis/12-Chapter-two.png">
+          <img class="pages" id="page21" src="graphics/Thesis/13-Chapter-two-introduction.png">
+          <img class="pages" id="page22" src="graphics/Thesis/14-Chapter-two-pg1.png">
+          <img class="pages" id="page23" src="graphics/Thesis/15-Chapter-two-pg2.png">
+          <img class="pages" id="page24" src="graphics/Thesis/16-Chapter-two-pg3.png">
+          <img class="pages" id="page25" src="graphics/Thesis/17-Chapter-two-pg4.png">
+          <img class="pages" id="page26" src="graphics/Thesis/18-Chapter-two-pg5.png">
+          <img class="pages" id="page27" src="graphics/Thesis/19-Chapter-two-pg6.png">
+          <img class="pages" id="page28" src="graphics/Thesis/20-Chapter-two-pg7.png">
+          <img class="pages" id="page29" src="graphics/Thesis/21-Chapter-two-pg8.png">
+          <img class="pages" id="page30" src="graphics/Thesis/22-Chapter-two-pg9.png">
+          <img class="pages" id="page31" src="graphics/Thesis/23-Chapter-two-pg10.png">
+          <img class="pages" id="page32" src="graphics/Thesis/24-Chapter-two-pg11.png">
+          <img class="pages" id="page33" src="graphics/Thesis/25-Chapter-two-pg12.png">
+          <img class="pages" id="page34" src="graphics/Thesis/26-Chapter-two-conclusion.png">
+          <img class="pages" id="page35" src="graphics/Thesis/27-Chapter-three.png">
+          <img class="pages" id="page36" src="graphics/Thesis/28-Chapter-three-introduction.png">
+          <img class="pages" id="page37" src="graphics/Thesis/29-Chapter-three.png">
+          <img class="pages" id="page38" src="graphics/Thesis/30-Chapter-three.png">
+          <img class="pages" id="page39" src="graphics/Thesis/31-Chapter-three.png">
+          <img class="pages" id="page40" src="graphics/Thesis/32-Chapter-three.png">
+          <img class="pages" id="page41" src="graphics/Thesis/33-Chapter-three.png">
+          <img class="pages" id="page42" src="graphics/Thesis/34-Chapter-three.png">
+          <img class="pages" id="page43" src="graphics/Thesis/35-Chapter-three.png">
+          <img class="pages" id="page44" src="graphics/Thesis/36-Conclusion.png">
+          <img class="pages" id="page45" src="graphics/Thesis/37-Conclusion.png">
+          <img class="pages" id="page46" src="graphics/Thesis/38-Conclusion.png">
+          <img class="pages" id="page47" src="graphics/Thesis/39-List-of-references.png">
+          <img class="pages" id="page48" src="graphics/Thesis/40-References.png">
+          <img class="pages" id="page49" src="graphics/Thesis/41-References.png">
+          <img class="pages" id="page50" src="graphics/Thesis/42-References.png">
+          <img class="pages" id="page51" src="graphics/Thesis/43-References.png">
+          <img class="pages" id="page52" src="graphics/Thesis/44-References.png">
+          <img class="pages" id="page53" src="graphics/Thesis/45-References.png">
+          <img class="pages" id="page54" src="graphics/Thesis/46-References.png">
+          <img class="pages" id="page55" src="graphics/Thesis/47-References.png">
+          <img class="pages" id="page56" src="graphics/Thesis/48-References.png">
+
+
+
+        </div>
+        <div></div>
+      </div>
+
+    </div>
+
+    <div id="CS230Details">
+      <span onclick="hideProject()" class="close">&times;</span>
+      <video id="CS230Player" controls>
+        <source src="graphics/CS230/Quiz_App.mp4" type="video/mp4" alt="Assignment 4 LAMP stack using AJAX">
+        Your browser does not support HTML5 video.
+      </video>
+      <img class="large_images" src="graphics/CS230/Assignment1.png" alt="CS230 Assignment 1 2d Array DOM manipulation">
+      <img class="large_images" src="graphics/CS230/CS230-Assignment2.png" alt="CS230 Assignment 2 DOM manipulation and use of cookies">
+      <img id="PHPCRUD" class="large_images" src="graphics/CS230/PHP_CRUD_UI.png" alt="CS230 Assignment 3 PHP CRUD using a LAMP stack">
+
+
+    </div>
+
+    <div id="hobbiesDetails">
+      <span onclick="hideProject()" class="close">&times;</span>
+      <img class="large_images" id="environment" src="graphics/Hobbies/environment.jpg" alt="Digital environment artwork in 3d">
+      <img class="large_images" id="environment2" src="graphics/Hobbies/environment2.jpg" alt="Digital environment artwork in 3d">
+      <img class="large_images" id="sculpting" src="graphics/Hobbies/Sculpting.jpg" alt="Digital and pumpkin sculptures">
+      <img class="large_images" id="painting" src="graphics/Hobbies/Painting.jpg" alt="Digital 2d paintings and artwork">
+      <img class="large_images" id="photography" src="graphics/Hobbies/photography.jpg" alt="Personally photography">
+      <img class="large_images" id="lifeDrawing" src="graphics/Hobbies/Life_drawing.jpg" alt="Life drawing">
 
     </div>
 
     <div id="hitikDetails">
-          <span onclick="hideProject()" class="close">&times;</span>
+      <span onclick="hideProject()" class="close">&times;</span>
       <img class="large_images" src="graphics/Hi-Tik/Hi-tik_mouse_1260.jpg" alt="Hi-tik mouse">
       <img class="large_images" src="graphics/Hi-Tik/Final-renders.jpg" alt="Hi-tik mouse rendered views">
       <img class="large_images" src="graphics/Hi-Tik/Rationale.jpg" alt="Product rationale">
-      <img class="large_images" src="graphics/Hi-Tik/later_sketches_for_biopodz_1260.jpg" alt="Biopodz sketches">
       <img class="large_images" src="graphics/Hi-Tik/Exploded.jpg" alt="Exploded render">
       <img class="large_images" src="graphics/Hi-Tik/Exploded2.jpg" alt="Exploded render 2">
       <img class="large_images" src="graphics/Hi-Tik/Sketched-concepts.jpg" alt="Concept sketches">
       <img class="large_images" src="graphics/Hi-Tik/Sculpt-concepts.jpg" alt="Sculpted sketches">
+    </div>
+
+    <div id="AboutMeDetails">
+      <span onclick="hideProject()" class="close">&times;</span>
+      <div class="large_images" id="aboutMeText"  alt="About me details">
+        <p>Hello.  From a young age, for fun I always enjoyed building things.  It was no different when I made my first game on SEUCK aged 11 and with REALITY when I was 15 back in the Amiga days.  In 2000, I spent a year in animation school, it helped with my drawing skills, but I never had much love for cartoons.  In 2003, I completed a multimedia certificate and was involved in developing Kingdom Wars.  After some time working and living abroad in Australia, in 2005 I returned to college to gain a level 7 degree in product design.  When graduating in 2008 the worst global economic collapse in decades hit.  This meant job prospects were few and far between.  For the next few years I spent it improving my modelling and texturing skills and spent some time involved in indie development teams.</p><br><br>
+
+<p>In 2012, my skills had improved to a level where I was getting art tests with AAA game development studios and by August 2013 I was hired to work in a New York based Arch Viz company.  However, in that same month I was offered a place in a 4th year level 8 product design course and by June 2014 I left with a 2:1 grade.  I would have loved a 1:1, but it was difficult when coming into a course that's curriculum was somewhat different to the 3 years I had spend in LYIT.  In March 2015, I got my first role as a designer at MSI signs that lasted 10 months, they fell on hard time and not long after stopped trading, which was a shame and I enjoyed my time there.  In May 2016, I spent some time at Carlow graphics and got to work on displays for Dyson along with the chance to work on several small projects.  The nature of the signage industry, the work dried up after I completed the Dyson displays and they let me go.  I was asked to work for them again the following summer, but by then I was learning to code.  In those few years, I spent it getting better at 3d rendering and modelling, mostly in Blender and tried to get hired in the arch viz industry or as a product designer.  I also bought a 3d printer and used it print out prototypes of various product designs, for example a computer mouse I designed.
+</p><br><br>
+
+<p>In August 2017, after making the long drive to Kerry and spending the night there for a job interview for a product design job, not getting it after an hour long interview I decided to take a new route.  That being, I made the decision at 34 to learn how to program and one year on I'm glad I did.  The opportunities in Ireland alone exist and for hard work there is a payoff.  When trying to get into the games industry as an environment artist and then get hired as a product designer, I struggled not to feel down by the lack of opportunities.  I now ask myself, why didn't I learn to program earlier in my life?  Since graduating with a 1:1, I've already had two interviews and have something tangible to aim for, life would have been easier if I had chosen to work as a software developer years ago.<p><br><br>
+
+<p>With all the skills acquired over the years, I now feel I can make just about anything given the time and resources.  For the future, the aim is to keep on coding, practicing algorithms, learn more about javascript, learn Angular in more depth, make some products in my free time and ultimately, become successful.  With skills in product design, graphics, now programming and the economy doing very well overall what's to stop me?</p></div>
 
     </div>
 
     <div id="biopodzDetails">
-          <span onclick="hideProject()" class="close">&times;</span>
+      <span onclick="hideProject()" class="close">&times;</span>
       <img class="large_images" src="graphics/Biopodz/logo-for-behance.png" alt="Biopodz logo">
       <img class="large_images" src="graphics/Biopodz/about-biopodz.png" alt="About Biopodz">
       <img class="large_images" src="graphics/Biopodz/toons4.png" alt="Biopodz cartoon characters">
@@ -88,7 +217,7 @@
     </div>
 
     <div id="sharpwaveDetails">
-          <span onclick="hideProject()" class="close">&times;</span>
+      <span onclick="hideProject()" class="close">&times;</span>
       <div id="sharwaveCenter">
         <video id="sharwavePlayer" controls>
           <source src="graphics/SharpWave/SharpWave.mp4" type="video/mp4">
@@ -100,9 +229,18 @@
 
     </div>
 
+    <div id="MSIDetails">
+      <span onclick="hideProject()" class="close">&times;</span>
+      <img class="large_images" id="canopy" src="graphics/MSI_Signs/MSI-work-Campus-Canopy-design.png" alt="MSI service stations rebranding and design">
+      <img class="large_images" id="bespoke" src="graphics/MSI_Signs/MSI-design-and-bespoke.png" alt="MSI signs designs and bespoke">
+      <img class="large_images" id="brand" src="graphics/MSI_Signs/MSI-logo-and-brand-design.png" alt="MSI logo and brand design">
+      <img class="large_images" id="ssbrand" src="graphics/MSI_Signs/MSI-SS-brand.png" alt="MSI service station brand">
+
+    </div>
+
     <div id="epeeDetails">
       <span onclick="hideProject()" class="close">&times;</span>
-      <img class="large_images" src="graphics/Epee/Epee_graphics.jpg" alt="Epee soccer boots">
+      <img class="large_images" id="boots" src="graphics/Epee/Epee_graphics.jpg" alt="Epee soccer boots">
     </div>
 
     <div id="penDetails">
@@ -114,6 +252,24 @@
       <img class="large_images" src="graphics/Pen/case_sketches.jpg" alt="Case sketches">
     </div>
 
+    <div id="archDetails">
+      <span onclick="hideProject()" class="close">&times;</span>
+      <img class="large_images" src="graphics/Arch_Viz/Lounge_room1260.jpg" alt="Lounge room in work environment">
+      <img class="large_images" src="graphics/Arch_Viz/school3.jpg" alt="Primary school with Biopodz product">
+      <img class="large_images" src="graphics/Arch_Viz/Open_Office1260.jpg" alt="Open office cg render">
+      <img class="large_images" src="graphics/Arch_Viz/bungalow1.jpg" alt="Bungalow arch viz">
+    </div>
+
+    <div id="iDrinkDetails">
+      <span onclick="hideProject()" class="close">&times;</span>
+      <img class="large_images" src="graphics/iDrink/idrink_collage_1260.jpg" alt="iDrink beer dispenser">
+      <img class="large_images" src="graphics/iDrink/idrink-assembly_1260.jpg" alt="iDrink beer dispenser disassembled">
+      <img class="large_images" src="graphics/iDrink/exploded-view_1260.jpg" alt="iDrink beer dispenser disassembled">
+      <img class="large_images" src="graphics/iDrink/idrink-colours_1260.jpg" alt="iDrink beer dispenser in various colours">
+
+    </div>
+
+
     <div id="outer-grid">
       <div class="container">
         <div id="watch">
@@ -122,7 +278,7 @@
           </div>
           <div class="middle">
             <div class="mask">
-              <h2 id="test">Biopodz</h2>
+              <h2 class="header">Biopodz</h2>
               <p class="desc">A teaching aid for primary schools, with the aim of providing a positive association to growing and eating food.</p>
             </div>
             <!-- end mask -->
@@ -139,7 +295,7 @@
           </div>
           <div class="middle">
             <div class="mask">
-              <h2 id="test">SharpWave</h2>
+              <h2 class="header">SharpWave</h2>
               <p class="desc">An Android audio playing application.</p>
             </div>
 
@@ -157,7 +313,7 @@
           </div>
           <div class="middle">
             <div class="mask">
-              <h2 id="test">Cozmet</h2>
+              <h2 class="header">Cozmet</h2>
               <p class="desc">An application containing information on new cosmetic products and the expiry date of current products owned by the user.</p>
             </div>
 
@@ -167,6 +323,24 @@
       </div>
       <!-- end watch container -->
 
+
+            <div class="container">
+              <div id="cs230">
+                <div class="image_info">
+                  <img id="cs230Mod" class="imageThumbs" src="graphics/index_graphics/CS230_630.png"></img alt="Some assignments within the CS230 Web Development Module of Computer Science in Maynooth University">
+                </div>
+                <div class="middle">
+                  <div class="mask">
+                    <h2 class="header">CS230 Assignments</h2>
+                    <p class="desc">Some of the assignments given for CS230 in Maynooth University.  Includes DOM manipulation, CRUD operations, LAMP stack, REST API, Cookies, Local Storage and AJAX.</p>
+                  </div>
+
+                  <div onclick="showCS230();" class="text" id="watch">CLICK FOR MORE INFO</div>
+                </div>
+              </div>
+            </div>
+            <!-- end CS230 container -->
+
       <div class="container">
         <div id="watch">
           <div class="image_info">
@@ -174,7 +348,7 @@
           </div>
           <div class="middle">
             <div class="mask">
-              <h2 id="test">Bad News Watch</h2>
+              <h2 class="header">Bad News Watch</h2>
               <p class="desc">Using a custom built Indian bike, titled Bad News this watch design matches the bike's design.</p>
             </div>
 
@@ -192,8 +366,8 @@
           </div>
           <div class="middle">
             <div class="mask">
-              <h2 id="test">Templar Epee</h2>
-              <p class="desc">A soccer boots design commerating Euro2016 held in France</p>
+              <h2 class="header">Templar Epee</h2>
+              <p class="desc">A soccer boot design commerating Euro2016 held in France</p>
             </div>
             <!-- end mask -->
 
@@ -209,12 +383,29 @@
           </div>
           <div class="middle">
             <div class="mask">
-              <h2 id="test">Audi/Waldmann pen</h2>
+              <h2 class="header">Audi/Waldmann pen</h2>
               <p class="desc">A complementary Waldmann pen for the purchase of an Audi A8</p>
             </div>
             <!-- end mask -->
 
-            <div onclick="showEpee();" class="text" id="epee">CLICK FOR MORE INFO</div>
+            <div onclick="showPen();" class="text" id="epee">CLICK FOR MORE INFO</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div id="watch">
+          <div class="image_info">
+            <img id="badWatch" class="imageThumbs" src="graphics/index_graphics/thesis-logo.png"></img alt="Thesis">
+          </div>
+          <div class="middle">
+            <div class="mask">
+              <h2 class="header">Product Design Thesis</h2>
+              <p class="desc">A thesis proposing alternative sustainable and environmentally friendier materials that have superior properties than what we currently use in mass.</p>
+            </div>
+            <!-- end mask -->
+
+            <div onclick="showThesis();" class="text" id="epee">CLICK FOR MORE INFO</div>
           </div>
         </div>
       </div>
@@ -226,7 +417,7 @@
           </div>
           <div class="middle">
             <div class="mask">
-              <h2 id="test">Hi-Tik Mouse</h2>
+              <h2 class="header">Hi-Tik Mouse</h2>
               <p class="desc">A computer mouse designed to help alleviate joint pain and repetitive strain injury</p>
             </div>
             <!-- end mask -->
@@ -236,13 +427,62 @@
         </div>
       </div>
 
-      <div>5</div>
-      <div>6</div>
+      <div class="container">
+        <div id="msisigns">
+          <div class="image_info">
+            <img id="msisigns" class="imageThumbs" src="graphics/index_graphics/MSI.jpg"></img alt="MSI Signs - manufacture, supply, install">
+          </div>
+          <div class="middle">
+            <div class="mask">
+              <h2 class="header">MSI Signs</h2>
+              <p class="desc">A collection of the work and designs created at my time at MSI Signs</p>
+            </div>
+            <!-- end mask -->
+
+            <div onclick="showMSI();" class="text" id="MSI">CLICK FOR MORE INFO</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div id="arch">
+          <div class="image_info">
+            <img id="archviz" class="imageThumbs" src="graphics/index_graphics/arch_viz_630.jpg"></img alt="Arch viz renders">
+          </div>
+          <div class="middle">
+            <div class="mask">
+              <h2 class="header">Architectural Visualisation</h2>
+              <p class="desc">Some architectural visualisation renders of interiors and exteriors</p>
+            </div>
+            <!-- end mask -->
+
+            <div onclick="showArch();" class="text" id="arch">CLICK FOR MORE INFO</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div id="idrink">
+          <div class="image_info">
+            <img id="archviz" class="imageThumbs" src="graphics/index_graphics/idrink_630.jpg"></img alt="iDrink draught beer dispenser">
+          </div>
+          <div class="middle">
+            <div class="mask">
+              <h2 class="header">iDrink</h2>
+              <p class="desc">A portable draught beer dispenser using a peltier device</p>
+            </div>
+            <!-- end mask -->
+
+            <div onclick="showiDrink();" class="text" id="idrink">CLICK FOR MORE INFO</div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </div>
 
-  <div id="footer">
+  <segment id="footer">
     <div id="footer-outer-grid">
       <div id="footer-inner-grid">
         <div></div>
@@ -256,6 +496,16 @@
             <div>
               <a href="https://www.linkedin.com/in/sean-kelly-0233b113/" target="_blank">
               <img id="icons" class="imageThumbs" src="graphics/icon_links/LinkedIn.png"></img alt="LinkedIn"></a>
+            </div>
+
+            <div>
+              <a href="https://www.hackerrank.com/sean_kelly_2018" target="_blank">
+              <img id="icons" class="imageThumbs" src="graphics/icon_links/hackerrank.png"></img alt="Hackerrank"></a>
+            </div>
+
+            <div>
+              <a href="https://leetcode.com/seankelly369/" target="_blank">
+              <img id="icons" class="imageThumbs" src="graphics/icon_links/leetcode.png"></img alt="Leetcode"></a>
             </div>
 
             <div>
@@ -282,7 +532,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </segment>
 
 
 </body>
