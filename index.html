@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
   <meta charset="utf-8">
 
   <meta name="portfolio design product web webdesign programming javascript java CV resume about inforgraphics bio biography graphics biopodz thesis branding packaging sign-making 3d art artist digital max photoshop watch pen audi indian industry painting development environment model-making sketching CNC CAD blender opensource autodesk 3dsmax vray cycles creativity vinyl print"
     content="" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
   <link rel="shortcut icon" href="graphics/SK-logo_60.png" />
 
@@ -17,37 +28,114 @@
 </head>
 
 <body onscroll="growShrinkNav()" onresize="sizeChange();">
-
-
   <!-- Navbar code -->
   <segment id="container">
-    <div id="nav">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+
+      <a id="logo" href="index.html" id="navbar_logo">
+        <img id="logo_header" src="graphics/logo.png" alt="kelly3d">
+      </a>
+
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <div class="nav-links-cell">
+              <div>
+                <a class="nav-container" href='index.html'>
+                  <img id="navIcon1" src="graphics/icon_links/Portfolio.png" alt="Sean Kelly's Portfolio">
+                </a>
+
+              <div id="portfolio" class="nav-text">Portfolio</div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <div class="nav-links-cell">
+              <div>
+                <a class="nav-container">
+                  <img id="navIcon2" onclick="showAboutMeDetails();" src="graphics/icon_links/aboutMe.png" alt="About Me, Sean Kelly">
+                </a>
+                <div id="aboutme" class="nav-text">About Me</div>
+              </div>
+          </li>
+
+          <li class="nav-item">
+              <div class="nav-links-cell">
+                <div>
+                  <a class="nav-container">
+                      <img id="navIcon3" onclick="showHobbies();" src="graphics/icon_links/Hobbies.png" alt="Hobbies of Sean Kelly">
+                  </a>
+                  <div id="hobbies" class="nav-text">Hobbies</div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <div class="nav-links-cell">
+                  <div>
+                    <a class="nav-container">
+                        <a alt="Hobbies of Sean Kelly" href='http://www.kelly3d.com/wp' target="_blank">
+                          <img id="navIcon4" src="graphics/icon_links/Blog.png">
+                    </a>
+                    <div id="blog" class="nav-text">Blog</div>
+                  </div>
+              </li>
+
+              <li class="nav-item">
+                  <div class="nav-links-cell">
+                    <div>
+                      <a class="nav-container">
+                          <a alt="Sean Kelly CV" href="/graphics/icon_links/Sean_Kelly_CV_2018P.pdf" download>
+                            </a>
+                            <img id="navIcon5" src="graphics/icon_links/cv.png">
+                      <div id="cv" class="nav-text">CV</div>
+                    </div>
+                </li>
+
+        </ul>
+        </div>
+    </nav>
+
+
+    <!-- <div id="nav">
       <div id="nav_links">
         <div id="innerNav">
           <div>
-            <a href='index.html'> <img id="navIcon1" src="graphics/icon_links/Portfolio.png" alt="Sean Kelly's Portfolio"></a>
+
           </div>
           <div>
-            <a> <img id="navIcon2" onclick="showAboutMeDetails();" src="graphics/icon_links/aboutMe.png" alt="About Me, Sean Kelly"></a>
+            <a>
+              <img id="navIcon2" onclick="showAboutMeDetails();" src="graphics/icon_links/aboutMe.png" alt="About Me, Sean Kelly">
+            </a>
           </div>
           <div>
-            <a> <img id="navIcon3" onclick="showHobbies();" src="graphics/icon_links/Hobbies.png" alt="Hobbies of Sean Kelly"></a>
+            <a>
+              <img id="navIcon3" onclick="showHobbies();" src="graphics/icon_links/Hobbies.png" alt="Hobbies of Sean Kelly">
+            </a>
           </div>
           <div>
-            <a alt="Hobbies of Sean Kelly" href='http://www.kelly3d.com/wp' target="_blank"> <img id="navIcon4" src="graphics/icon_links/Blog.png" ></a>
+            <a alt="Hobbies of Sean Kelly" href='http://www.kelly3d.com/wp' target="_blank">
+              <img id="navIcon4" src="graphics/icon_links/Blog.png">
+            </a>
           </div>
           <div>
-            <a alt="Sean Kelly CV" href="/graphics/icon_links/Sean_Kelly_CV_2018P.pdf" download> <img id="navIcon5" src="graphics/icon_links/cv.png"</a>
+            <a alt="Sean Kelly CV" href="/graphics/icon_links/Sean_Kelly_CV_2018P.pdf" download>
+              <img id="navIcon5" src="graphics/icon_links/cv.png" </a>
           </div>
         </div>
       </div>
 
       <div id="logo">
         <a href="index.html" id="navbar_logo">
-              <img id="logo_header"  src="graphics/logo.png" alt="kelly3d">
-            </a>
+          <img id="logo_header" src="graphics/logo.png" alt="kelly3d">
+        </a>
       </div>
-    </div>
+    </div> -->
+
+
+
   </segment>
 
   <div onclick="hideProject()" id="overlay"></div>
@@ -65,8 +153,7 @@
     <div id="cosmetDetails">
       <span onclick="hideProject()" class="close">&times;</span>
       <video width="99%" controls>
-        <source src="graphics/Cosmet/Cozmet_Sean.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
+        <source src="graphics/Cosmet/Cozmet_Sean.mp4" type="video/mp4"> Your browser does not support HTML5 video.
       </video>
 
       <img class="large_images" src="graphics/Cosmet/cozmet.png" alt="Cosmet for cosmetic products">
@@ -76,20 +163,20 @@
       <span onclick="hideProject()" class="close">&times;</span>
       <div id="thesisGrid">
         <div id="menu">
-        <div id="menu2">
-          <div id="cover" onclick="ScrollTo('page1')">Cover</div>
-          <div id="abstract" onclick="ScrollTo('page2')" >Abstract</div>
-          <div id="acknowledgement" onclick="ScrollTo('page3')" >Acknowledgement</div>
-          <div id="listOfFigures" onclick="ScrollTo('page5')" >List of Figures</div>
-          <div id="introduction" onclick="ScrollTo('page6')" >Introduction</div>
-          <div id="chapterOne" onclick="ScrollTo('page9')" >Chapter One</div>
-          <div id="chapterTwo" onclick="ScrollTo('page20')" >Chapter Two</div>
-          <div id="chapterThree" onclick="ScrollTo('page35')" >Chapter Three</div>
-          <div id="conclusion" onclick="ScrollTo('page44')" >Conclusion</div>
-          <div id="listOfFigures" onclick="ScrollTo('page47')" >List of References</div>
+          <div id="menu2">
+            <div id="cover" onclick="ScrollTo('page1')">Cover</div>
+            <div id="abstract" onclick="ScrollTo('page2')">Abstract</div>
+            <div id="acknowledgement" onclick="ScrollTo('page3')">Acknowledgement</div>
+            <div id="listOfFigures" onclick="ScrollTo('page5')">List of Figures</div>
+            <div id="introduction" onclick="ScrollTo('page6')">Introduction</div>
+            <div id="chapterOne" onclick="ScrollTo('page9')">Chapter One</div>
+            <div id="chapterTwo" onclick="ScrollTo('page20')">Chapter Two</div>
+            <div id="chapterThree" onclick="ScrollTo('page35')">Chapter Three</div>
+            <div id="conclusion" onclick="ScrollTo('page44')">Conclusion</div>
+            <div id="listOfFigures" onclick="ScrollTo('page47')">List of References</div>
 
+          </div>
         </div>
-      </div>
         <div id="thesisPages">
           <img class="pages" id="page1" src="graphics/Thesis/i-cover.png">
           <img class="pages" id="page2" src="graphics/Thesis/ii-abstract.png">
@@ -160,8 +247,7 @@
     <div id="CS230Details">
       <span onclick="hideProject()" class="close">&times;</span>
       <video id="CS230Player" controls>
-        <source src="graphics/CS230/Quiz_App.mp4" type="video/mp4" alt="Assignment 4 LAMP stack using AJAX">
-        Your browser does not support HTML5 video.
+        <source src="graphics/CS230/Quiz_App.mp4" type="video/mp4" alt="Assignment 4 LAMP stack using AJAX"> Your browser does not support HTML5 video.
       </video>
       <img class="large_images" src="graphics/CS230/Assignment1.png" alt="CS230 Assignment 1 2d Array DOM manipulation">
       <img class="large_images" src="graphics/CS230/CS230-Assignment2.png" alt="CS230 Assignment 2 DOM manipulation and use of cookies">
@@ -194,15 +280,49 @@
 
     <div id="AboutMeDetails">
       <span onclick="hideProject()" class="close">&times;</span>
-      <div class="large_images" id="aboutMeText"  alt="About me details">
-        <p>Hello.  From a young age, for fun I always enjoyed building things.  It was no different when I made my first game on SEUCK aged 11 and with REALITY when I was 15 back in the Amiga days.  In 2000, I spent a year in animation school, it helped with my drawing skills, but I never had much love for cartoons.  In 2003, I completed a multimedia certificate and was involved in developing Kingdom Wars.  After some time working and living abroad in Australia, in 2005 I returned to college to gain a level 7 degree in product design.  When graduating in 2008 the worst global economic collapse in decades hit.  This meant job prospects were few and far between.  For the next few years I spent it improving my modelling and texturing skills and spent some time involved in indie development teams.</p><br><br>
+      <div class="large_images" id="aboutMeText" alt="About me details">
+        <p>Hello. From a young age, for fun I always enjoyed building things. It was no different when I made my first game
+          on SEUCK aged 11 and with REALITY when I was 15 back in the Amiga days. In 2000, I spent a year in animation school,
+          it helped with my drawing skills, but I never had much love for cartoons. In 2003, I completed a multimedia certificate
+          and was involved in developing Kingdom Wars. After some time working and living abroad in Australia, in 2005 I
+          returned to college to gain a level 7 degree in product design. When graduating in 2008 the worst global economic
+          collapse in decades hit. This meant job prospects were few and far between. For the next few years I spent it improving
+          my modelling and texturing skills and spent some time involved in indie development teams.</p>
+        <br>
+        <br>
 
-<p>In 2012, my skills had improved to a level where I was getting art tests with AAA game development studios and by August 2013 I was hired to work in a New York based Arch Viz company.  However, in that same month I was offered a place in a 4th year level 8 product design course and by June 2014 I left with a 2:1 grade.  I would have loved a 1:1, but it was difficult when coming into a course that's curriculum was somewhat different to the 3 years I had spend in LYIT.  In March 2015, I got my first role as a designer at MSI signs that lasted 10 months, they fell on hard time and not long after stopped trading, which was a shame and I enjoyed my time there.  In May 2016, I spent some time at Carlow graphics and got to work on displays for Dyson along with the chance to work on several small projects.  The nature of the signage industry, the work dried up after I completed the Dyson displays and they let me go.  I was asked to work for them again the following summer, but by then I was learning to code.  In those few years, I spent it getting better at 3d rendering and modelling, mostly in Blender and tried to get hired in the arch viz industry or as a product designer.  I also bought a 3d printer and used it print out prototypes of various product designs, for example a computer mouse I designed.
-</p><br><br>
+        <p>In 2012, my skills had improved to a level where I was getting art tests with AAA game development studios and by
+          August 2013 I was hired to work in a New York based Arch Viz company. However, in that same month I was offered
+          a place in a 4th year level 8 product design course and by June 2014 I left with a 2:1 grade. I would have loved
+          a 1:1, but it was difficult when coming into a course that's curriculum was somewhat different to the 3 years I
+          had spend in LYIT. In March 2015, I got my first role as a designer at MSI signs that lasted 10 months, they fell
+          on hard time and not long after stopped trading, which was a shame and I enjoyed my time there. In May 2016, I
+          spent some time at Carlow graphics and got to work on displays for Dyson along with the chance to work on several
+          small projects. The nature of the signage industry, the work dried up after I completed the Dyson displays and
+          they let me go. I was asked to work for them again the following summer, but by then I was learning to code. In
+          those few years, I spent it getting better at 3d rendering and modelling, mostly in Blender and tried to get hired
+          in the arch viz industry or as a product designer. I also bought a 3d printer and used it print out prototypes
+          of various product designs, for example a computer mouse I designed.
+        </p>
+        <br>
+        <br>
 
-<p>In August 2017, after making the long drive to Kerry and spending the night there for a job interview for a product design job, not getting it after an hour long interview I decided to take a new route.  That being, I made the decision at 34 to learn how to program and one year on I'm glad I did.  The opportunities in Ireland alone exist and for hard work there is a payoff.  When trying to get into the games industry as an environment artist and then get hired as a product designer, I struggled not to feel down by the lack of opportunities.  I now ask myself, why didn't I learn to program earlier in my life?  Since graduating with a 1:1, I've already had two interviews and have something tangible to aim for, life would have been easier if I had chosen to work as a software developer years ago.<p><br><br>
+        <p>In August 2017, after making the long drive to Kerry and spending the night there for a job interview for a product
+          design job, not getting it after an hour long interview I decided to take a new route. That being, I made the decision
+          at 34 to learn how to program and one year on I'm glad I did. The opportunities in Ireland alone exist and for
+          hard work there is a payoff. When trying to get into the games industry as an environment artist and then get hired
+          as a product designer, I struggled not to feel down by the lack of opportunities. I now ask myself, why didn't
+          I learn to program earlier in my life? Since graduating with a 1:1, I've already had two interviews and have something
+          tangible to aim for, life would have been easier if I had chosen to work as a software developer years ago.
+          <p>
+            <br>
+            <br>
 
-<p>With all the skills acquired over the years, I now feel I can make just about anything given the time and resources.  For the future, the aim is to keep on coding, practicing algorithms, learn more about javascript, learn Angular in more depth, make some products in my free time and ultimately, become successful.  With skills in product design, graphics, now programming and the economy doing very well overall what's to stop me?</p></div>
+            <p>With all the skills acquired over the years, I now feel I can make just about anything given the time and resources.
+              For the future, the aim is to keep on coding, practicing algorithms, learn more about javascript, learn Angular
+              in more depth, make some products in my free time and ultimately, become successful. With skills in product
+              design, graphics, now programming and the economy doing very well overall what's to stop me?</p>
+      </div>
 
     </div>
 
@@ -214,14 +334,24 @@
       <img class="large_images" src="graphics/Biopodz/later_sketches_for_biopodz_1260.jpg" alt="Biopodz sketches">
       <img class="large_images" src="graphics/Biopodz/calendar2.jpg" alt="Biopodz calendar">
       <img class="large_images" src="graphics/Biopodz/school1.jpg" alt="Biopodz disassembled in school">
+      <img class="large_images" src="graphics/Biopodz/disassembled2.jpg" alt="Biopodz disassembled parts">
+      <img class="large_images" src="graphics/Biopodz/model-making.jpg" alt="Biopodz model making process">
+      <img class="large_images" src="graphics/Biopodz/model-making-display.jpg" alt="Biopodz display model construction process">
+      <img class="large_images" style="max-width:702px" src="graphics/Biopodz/podz-operation.jpg" alt="Biopodz operated by children">
+      <img class="large_images" style="max-width:842px" src="graphics/Biopodz/Logo-presentation_rationale.png" alt="Biopodz logo rationale">
+      <img class="large_images" style="max-width:842px" src="graphics/Biopodz/Logo-presentation_colours.png" alt="Biopodz logo colours guidelines">
+      <img class="large_images" style="max-width:595px" src="graphics/Biopodz/Logo-presentation_incorrect-usage.png" alt="Biopodz logo incorrect usage">
+      <img class="large_images" style="max-width:595px" src="graphics/Biopodz/Logo-presentation_placement.png" alt="Biopodz logo placement guidelines">
+      <img class="large_images" style="max-width:595px" src="graphics/Biopodz/Logo-presentation_secondary.png" alt="Biopodz logo secondary">
+
+
     </div>
 
     <div id="sharpwaveDetails">
       <span onclick="hideProject()" class="close">&times;</span>
       <div id="sharwaveCenter">
         <video id="sharwavePlayer" controls>
-          <source src="graphics/SharpWave/SharpWave.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
+          <source src="graphics/SharpWave/SharpWave.mp4" type="video/mp4"> Your browser does not support HTML5 video.
         </video>
       </div>
 
@@ -279,7 +409,9 @@
           <div class="middle">
             <div class="mask">
               <h2 class="header">Biopodz</h2>
-              <p class="desc">A teaching aid for primary schools, with the aim of providing a positive association to growing and eating food.</p>
+              <p class="desc">A teaching aid for primary schools, with the aim of providing a positive association to growing and eating
+                food.
+              </p>
             </div>
             <!-- end mask -->
 
@@ -314,7 +446,8 @@
           <div class="middle">
             <div class="mask">
               <h2 class="header">Cozmet</h2>
-              <p class="desc">An application containing information on new cosmetic products and the expiry date of current products owned by the user.</p>
+              <p class="desc">An application containing information on new cosmetic products and the expiry date of current products owned
+                by the user.</p>
             </div>
 
             <div onclick="showCozmet();" class="text" id="cosmet">CLICK FOR MORE INFO</div>
@@ -324,22 +457,23 @@
       <!-- end watch container -->
 
 
-            <div class="container">
-              <div id="cs230">
-                <div class="image_info">
-                  <img id="cs230Mod" class="imageThumbs" src="graphics/index_graphics/CS230_630.png"></img alt="Some assignments within the CS230 Web Development Module of Computer Science in Maynooth University">
-                </div>
-                <div class="middle">
-                  <div class="mask">
-                    <h2 class="header">CS230 Assignments</h2>
-                    <p class="desc">Some of the assignments given for CS230 in Maynooth University.  Includes DOM manipulation, CRUD operations, LAMP stack, REST API, Cookies, Local Storage and AJAX.</p>
-                  </div>
-
-                  <div onclick="showCS230();" class="text" id="watch">CLICK FOR MORE INFO</div>
-                </div>
-              </div>
+      <div class="container">
+        <div id="cs230">
+          <div class="image_info">
+            <img id="cs230Mod" class="imageThumbs" src="graphics/index_graphics/CS230_630.png"></img alt="Some assignments within the CS230 Web Development Module of Computer Science in Maynooth University">
+          </div>
+          <div class="middle">
+            <div class="mask">
+              <h2 class="header">CS230 Assignments</h2>
+              <p class="desc">Some of the assignments given for CS230 in Maynooth University. Includes DOM manipulation, CRUD operations,
+                LAMP stack, REST API, Cookies, Local Storage and AJAX.</p>
             </div>
-            <!-- end CS230 container -->
+
+            <div onclick="showCS230();" class="text" id="watch">CLICK FOR MORE INFO</div>
+          </div>
+        </div>
+      </div>
+      <!-- end CS230 container -->
 
       <div class="container">
         <div id="watch">
@@ -401,7 +535,8 @@
           <div class="middle">
             <div class="mask">
               <h2 class="header">Product Design Thesis</h2>
-              <p class="desc">A thesis proposing alternative sustainable and environmentally friendier materials that have superior properties than what we currently use in mass.</p>
+              <p class="desc">A thesis proposing alternative sustainable and environmentally friendier materials that have superior properties
+                than what we currently use in mass.</p>
             </div>
             <!-- end mask -->
 
@@ -482,57 +617,67 @@
 
   </div>
 
-  <segment id="footer">
+  <div id="footer">
+    
     <div id="footer-outer-grid">
       <div id="footer-inner-grid">
         <div></div>
 
         <div>
           <div id="footer-icons">
-            <div><a href="mailto:sean@kelly3d.com" target="_blank">
-              <img id="icons" class="imageThumbs" src="graphics/icon_links/Email.png"></img alt="Email"></a>
+            <div>
+              <a href="mailto:sean@kelly3d.com" target="_blank">
+                <img id="icons" class="imageThumbs" src="graphics/icon_links/Email.png"></img alt="Email">
+              </a>
             </div>
 
             <div>
               <a href="https://www.linkedin.com/in/sean-kelly-0233b113/" target="_blank">
-              <img id="icons" class="imageThumbs" src="graphics/icon_links/LinkedIn.png"></img alt="LinkedIn"></a>
+                <img id="icons" class="imageThumbs" src="graphics/icon_links/LinkedIn.png"></img alt="LinkedIn">
+              </a>
             </div>
 
             <div>
               <a href="https://www.hackerrank.com/sean_kelly_2018" target="_blank">
-              <img id="icons" class="imageThumbs" src="graphics/icon_links/hackerrank.png"></img alt="Hackerrank"></a>
+                <img id="icons" class="imageThumbs" src="graphics/icon_links/hackerrank.png"></img alt="Hackerrank">
+              </a>
             </div>
 
             <div>
               <a href="https://leetcode.com/seankelly369/" target="_blank">
-              <img id="icons" class="imageThumbs" src="graphics/icon_links/leetcode.png"></img alt="Leetcode"></a>
+                <img id="icons" class="imageThumbs" src="graphics/icon_links/leetcode.png"></img alt="Leetcode">
+              </a>
             </div>
 
             <div>
               <a href="https://github.com/SeanKelly369" target="_blank">
-              <img id="icons" class="imageThumbs" src="graphics/icon_links/Github.png"></img alt="Github"></a>
+                <img id="icons" class="imageThumbs" src="graphics/icon_links/Github.png"></img alt="Github">
+              </a>
             </div>
 
             <div>
               <a href="https://www.freecodecamp.org/fcc2e0990a1-5740-49d9-8eb2-7ec40a488947" target="_blank">
-              <img id="icons" class="imageThumbs" src="graphics/icon_links/FreeCodeCamp.png"></img alt="Free Code Camp"></a>
+                <img id="icons" class="imageThumbs" src="graphics/icon_links/FreeCodeCamp.png"></img alt="Free Code Camp">
+              </a>
 
             </div>
             <div>
               <a href="https://www.pinterest.ie/seankell2000/" target="_blank">
-              <img id="icons" class="imageThumbs" src="graphics/icon_links/Pinterest.png"></img alt="Pinterest"></a>
+                <img id="icons" class="imageThumbs" src="graphics/icon_links/Pinterest.png"></img alt="Pinterest">
+              </a>
             </div>
 
             <div>
               <a href="https://www.behance.net/Sean_Kelly" target="_blank">
-              <img id="icons" class="imageThumbs" src="graphics/icon_links/Behance.png"></img alt="Behance"></a>
+                <img id="icons" class="imageThumbs" src="graphics/icon_links/Behance.png"></img alt="Behance">
+              </a>
             </div>
           </div>
 
         </div>
       </div>
     </div>
-  </segment>
+  </div>
 
 
 </body>

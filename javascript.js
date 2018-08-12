@@ -7,86 +7,104 @@ function growShrinkNav() {
   let navIcon3 = document.getElementById("navIcon3");
   let navIcon4 = document.getElementById("navIcon4");
   let navIcon5 = document.getElementById("navIcon5");
-  // let navIcon1Hover = document.getElementById("navIcon1:hover");
 
   if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 20) {
 		textFlag = false;
-    navIcon1.style.width = "32px";
-    navIcon2.style.width = "32px";
-    navIcon3.style.width = "32px";
-    navIcon4.style.width = "32px";
-    navIcon5.style.width = "32px";
-    Logo.style.width = '44px';
+    navIcon1.style.width = "60%";
+    navIcon1.style.transition = 'all ease .5s';
+    navIcon1.style.marginLeft = '0';
+    navIcon2.style.width = "60%";
+    navIcon2.style.transition = 'all ease .5s';
+    navIcon2.style.marginLeft = '0';
+    navIcon3.style.width = "60%";
+    navIcon3.style.transition = 'all ease .5s';
+    navIcon3.style.marginLeft = '0';
+    navIcon4.style.width = "60%";
+    navIcon4.style.transition = 'all ease .5s';
+    navIcon4.style.marginLeft = '0';
+    navIcon5.style.width = "60%";
+    navIcon5.style.transition = 'all ease .5s';
+    navIcon5.style.marginLeft = '0';
+
+    Logo.style.width = '70px';
 		innerNav.style.marginTop = '.5%';
-    nav.style.height = '54px';
+    // nav.style.height = '54px';
     Logo.style.transition = 'all ease .5s';
     nav_links.style.transition = 'all ease .5s';
     nav_links.style.height = '38px';
 		innerNav.style.fontSize = '12px';
-		innerNav.style.transition = 'all easy .5s';
+    innerNav.style.transition = 'all easy .5s';
+    navLinkCell.style.gridGap = '5rem';
+    aboutme.style.fontSize = '3rem';
+
   } else {
-    navIcon1.style.width = "40px";
-    navIcon2.style.width = "40px";
-    navIcon3.style.width = "40px";
-    navIcon4.style.width = "40px";
-    navIcon5.style.width = "40px";
+    navIcon1.style.width = "45px";
+    navIcon1.style.marginLeft = '7px';
+    navIcon2.style.width = "45px";
+    navIcon2.style.marginLeft = '7px';
+    navIcon3.style.width = "45px";
+    navIcon3.style.marginLeft = '7px';
+    navIcon4.style.width = "45px";
+    navIcon4.style.marginLeft = '7px';
+    navIcon5.style.width = "45px";
+    navIcon5.style.marginLeft = '7px';
     Logo.style.width = '62px';
     Logo.style.padding = '2px';
     nav.style.height = '80px';
-    nav_links.style.height = '60px';
+    // nav_links.style.height = '60px';
     nav_links.style.transition = 'all ease .5s';
     Logo.style.transition = 'all ease .5s';
-		innerNav.style.marginTop = '1%';
-		innerNav.style.fontSize = '14px';
-		innerNav.style.transition = 'all ease .5s';
+		// innerNav.style.marginTop = '1%';
+		// innerNav.style.fontSize = '14px';
+		// innerNav.style.transition = 'all ease .5s';
 		textFlag = true;
-    aboutme.style.width = "130%";
+
   }
 }
 
-function sizeChange() {
-  if (window.outerWidth < 600 && window.outerWidth > 499) {
-		if(textFlag){
-			innerNav.style.fontSize = '10px';
-		}else if(textFlag = false){
-				innerNav.style.fontSize = '12px';
-		}
-    nav_links.style.width = '66%';
-    nav_links.style.marginRight = '60px';
-  } else if (window.outerWidth < 700 && window.outerWidth > 600) {
-    nav_links.style.width = '70%';
-    nav_links.style.marginRight = '80px';
-		if(textFlag) {
-			innerNav.style.fontSize = '12px';
-		}
+// function sizeChange() {
+//   if (window.outerWidth < 600 && window.outerWidth > 499) {
+// 		if(textFlag){
+// 			// innerNav.style.fontSize = '10px';
+// 		}else if(textFlag = false){
+// 				innerNav.style.fontSize = '12px';
+// 		}
+//     nav_links.style.width = '66%';
+//     nav_links.style.marginRight = '60px';
+//   } else if (window.outerWidth < 700 && window.outerWidth > 600) {
+//     nav_links.style.width = '70%';
+//     nav_links.style.marginRight = '80px';
+// 		if(textFlag) {
+// 			innerNav.style.fontSize = '12px';
+// 		}
 
-  } else if (window.outerWidth < 499) {
-    nav_links.style.width = '62%';
-    nav_links.style.marginRight = '30px';
-		if(textFlag){
-			innerNav.style.fontSize = '7px';
-		}else if(textFlag = false){
-				innerNav.style.fontSize = '12px';
-		}
-		// innerNav.style.fontSize = '7px';
-		innerNav.style.padding = '2px';
+//   } else if (window.outerWidth < 499) {
+//     nav_links.style.width = '62%';
+//     nav_links.style.marginRight = '30px';
+// 		if(textFlag){
+// 			innerNav.style.fontSize = '7px';
+// 		}else if(textFlag = false){
+// 				innerNav.style.fontSize = '12px';
+// 		}
+// 		// innerNav.style.fontSize = '7px';
+// 		innerNav.style.padding = '2px';
 
-  } else if (window.outerWidth < 800 && window.outerWidth > 700) {
-    nav_links.style.width = '72%';
-    nav_links.style.marginRight = '90px';
-    footer.style.height = '3vh';
+//   } else if (window.outerWidth < 800 && window.outerWidth > 700) {
+//     nav_links.style.width = '72%';
+//     nav_links.style.marginRight = '90px';
+//     footer.style.height = '4vh';
 
-  } else if (window.outerWidth < 1000 && window.outerWidth > 800){
+//   } else if (window.outerWidth < 1000 && window.outerWidth > 800){
 
-    footer.style.height = '4.5vh';
-  }
+//     footer.style.height = '5vh';
+//   }
 
-  else {
-    nav_links.style.width = '76%';
-    nav_links.style.marginRight = '100px';
-    footer.style.height = '3vh';
-  }
-}
+//   else {
+//     nav_links.style.width = '76%';
+//     nav_links.style.marginRight = '100px';
+//     footer.style.height = '6vh';
+//   }
+// }
 
 //Open window showing details about the Sioux Watch
 function showWatch() {
