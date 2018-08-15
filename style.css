@@ -60,7 +60,7 @@ body {
   /* grid-template-rows: 1fr .1fr; */
   grid-gap: 2rem;
   /* background-color: blue; */
-  min-width: 140px;
+  min-width: 120px;
   float: right;
 }
 
@@ -133,11 +133,12 @@ a:visited {
   min-height: 500px;
   width: 87%;
   margin: auto;
+  margin-top: 10rem;
   padding-top: 90px;
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-bottom: 7rem;
+  margin-bottom: 12rem;
 }
 
 #outer-grid {
@@ -251,6 +252,7 @@ a:visited {
   cursor: pointer;
   border-radius: .3rem;
   backface-visibility: hidden;
+
 }
 
 
@@ -677,4 +679,85 @@ transition: all .2s ease-in-out;
 
 #mask {
 	width: 120%;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 720px) {
+
+  #outer-grid {
+    display: inline-block;
+  }
+
+  #footer-outer-grid {
+    min-height: 100px;
+
+  }
+
+  #icons {
+    width: 110%;
+    padding-left: 4px; 
+  }
+
+  #icons:hover {
+    width: 120%;
+    padding-left: 2px;
+  }
+
+  #footer-icons {
+
+  }
+
+  #footer-inner-grid {
+    display: grid;
+    grid-template-columns: .3fr 3fr .001fr;
+  }
+
+  .nav-links-cell {
+    /* background-color: blue; */
+    
+    width: 30%;
+  }
+
+  .nav-container {
+    /* background-color: orange; */
+    width: 120%;
+  }
+  .nav-text {
+    font-size: 3rem;
+  }
+
+  #navIcon1, #navIcon2, #navIcon3, #navIcon4, #navIcon5 {
+    transform: scale(1.3);
+    margin-bottom: 12px;
+    padding-left: 8px;
+  }
+
+  #navIcon1:hover, #navIcon2:hover, #navIcon3:hover, #navIcon4:hover, #navIcon5:hover {
+    transform: scale(1.56);
+  }
+
+  #Logo {
+    width: 500%;
+  }
+
+  .close {
+
+    font-size: 4rem;
+  }
+
+  #sharwavePlayer {
+    margin-top: 3rem;
+  }
+
+  #cosmetVideo, #CS230Player {
+    margin-top: 1rem;
+  }
+
+  #penDetails, #CS230Details, #cosmetDetails, #sharpwaveDetails, #biopodzDetails, #hitikDetails, #thesisDetails, #watchDetails, #epeeDetails, #penDetails, #MSIDetails, #archDetails, #iDrinkDetails {
+    transform: translateY(-60px);
+  }
+
+
 }
