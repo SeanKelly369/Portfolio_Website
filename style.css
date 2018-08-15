@@ -24,6 +24,7 @@ body {
   margin: auto;
   margin-top: 0px;
   padding: 0px;
+  min-width: 600px;
 }
 
 #nav {
@@ -136,6 +137,7 @@ a:visited {
   background-size: cover;
   background-position: center;
   position: relative;
+  margin-bottom: 7rem;
 }
 
 #outer-grid {
@@ -145,6 +147,7 @@ a:visited {
   grid-gap: 1.25rem;
   width: auto;
   height: auto;
+
 }
 
 #outer-grid > div {
@@ -171,6 +174,7 @@ a:visited {
   transform: scale(1);
   filter: blur(0);
   transition: all .4s;
+  opacity: .7
 }
 
 .footerThumbs {
@@ -180,9 +184,9 @@ a:visited {
 }
 
 .container:hover {
-  filter: brightness(120%);
+  filter: brightness(110%);
   transition: ease-in-out .2s;
-  background-color:#ccc;
+  background-color:#bbb;
   width: 110%;
 }
 
@@ -190,7 +194,6 @@ a:visited {
     position: relative;
     width: 50%;
     opacity: .8;
-    backface-visibility: hidden;
 }
 
 
@@ -212,14 +215,30 @@ a:visited {
 
 .header {
   margin-bottom: 1rem;
-  background-color: #ffe100;
-  color: rgb(31, 48, 14);
+  background-color: #008c1c;
+  /* color: rgb(31, 48, 14); */
+  color: white;
   font-size: 2.4vw;
-  padding-top: .4rem;
-  padding-bottom: .4rem;
+  padding-top: .3rem;
+  padding-bottom: .48rem;
   border-radius: 2px;
   transform: translateY(-1%);
+  opacity: .8;
 }
+
+#cosmet_header, #sharpwave_header, #cs230_header, #biopodz_header, #hitik_header, #thesis_header, #watch_header, #epee_header, #pen_header, #msi_header, #archviz_header, #idrink_header {
+  font-size: 2.4vw;
+}
+
+#biopodz_header, #hitik_header, #thesis_header, #watch_header, #epee_header, #pen_header, #msi_header, #idrink_header {
+  background-color: #0800a4;
+}
+
+#archviz_header {
+  background-color: #ff2f00;
+
+}
+
 
 .text {
   background-color: #ffffff88;
@@ -238,41 +257,21 @@ a:visited {
 .text:hover {
   background-color: #ffffffbb;
   color: rgb(51, 65, 36);
-  font-weight: 400;
-
-	/* width: 100%;
-	height: 100%;
-	transform: translate(-10%, 5%);
-  -ms-transform: translate(-10%, 5%);
-  transition: all ease 0s; */
-	/* text-transform: 20px;
-  font-size: 1.18vw; */
 }
 
-/* @keyframes fadeAndScale {
-  0% {
-    opacity: 1;
-    transform: translate(-50%, -180%);
-    -ms-transform: translate(-50%, -50%);
-        transform: scale3d(5, 5, 5);
-  }
-  100% {
-    opacity: 1:
-    transform scaleX(3);
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
-} */
 
 .desc {
   font-style: italic;
-  /* font-size: 2vw; */
   text-align: center;
   animation-delay: .4s;
   color: rgb(26, 35, 17);
   background-color: #ffffff55;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
+
+}
+
+#cosmet_text, #sharpwave_text, #cs230_text, #biopodz_text, #hitik_text, #thesis_text, #watch_text, #epee_text, #pen_text, #msi_text, #archviz_text, #idrink_text {
+
 }
 
 #cosmet_desc, #sharpwave_desc, #cs230_desc, #biopodz_desc, #hitik_desc, #thesis_desc, #watch_desc, #epee_desc, #pen_desc, #msi_desc, #archviz_desc, #idrink_desc {

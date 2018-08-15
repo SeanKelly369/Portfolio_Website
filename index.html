@@ -21,13 +21,12 @@
   <link rel="shortcut icon" href="graphics/SK-logo_60.png" />
 
   <link rel="stylesheet" type="text/css" href="/style.css">
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
   <script type="text/javascript" src="/javascript.js"></script>
 
   <title>Sean Kelly Software & Product Design</title>
 </head>
 
-<body onscroll="growShrinkNav();" onresize="maxText();">
+<body onload="maxText();" onscroll="growShrinkNav();" onresize="maxText();">
   <!-- Navbar code -->
   <segment id="container">
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -97,43 +96,6 @@
         </ul>
         </div>
     </nav>
-
-
-    <!-- <div id="nav">
-      <div id="nav_links">
-        <div id="innerNav">
-          <div>
-
-          </div>
-          <div>
-            <a>
-              <img id="navIcon2" onclick="showAboutMeDetails();" src="graphics/icon_links/aboutMe.png" alt="About Me, Sean Kelly">
-            </a>
-          </div>
-          <div>
-            <a>
-              <img id="navIcon3" onclick="showHobbies();" src="graphics/icon_links/Hobbies.png" alt="Hobbies of Sean Kelly">
-            </a>
-          </div>
-          <div>
-            <a alt="Hobbies of Sean Kelly" href='http://www.kelly3d.com/wp' target="_blank">
-              <img id="navIcon4" src="graphics/icon_links/Blog.png">
-            </a>
-          </div>
-          <div>
-            <a alt="Sean Kelly CV" href="/graphics/icon_links/Sean_Kelly_CV_2018P.pdf" download>
-              <img id="navIcon5" src="graphics/icon_links/cv.png" </a>
-          </div>
-        </div>
-      </div>
-
-      <div id="logo">
-        <a href="index.html" id="navbar_logo">
-          <img id="logo_header" src="graphics/logo.png" alt="kelly3d">
-        </a>
-      </div>
-    </div> -->
-
 
 
   </segment>
@@ -409,12 +371,12 @@
               </div>
               <div class="middle">
                 <div class="mask">
-                  <h2 class="header">Cozmet</h2>
+                  <h2 class="header" id="cosmet_header">Cozmet</h2>
                   <p class="desc" id="cosmet_desc">An application containing information on new cosmetic products and the expiry date of current products owned
                     by the user.</p>
                 </div>
     
-                <div onclick="showCozmet();" class="text" >CLICK FOR MORE INFO</div>
+                <div onclick="showCozmet();" class="text" id="cosmet_text">CLICK FOR MORE INFO</div>
               </div>
             </div>
           </div>
@@ -429,11 +391,11 @@
           </div>
           <div class="middle">
             <div class="mask">
-              <h2 class="header">SharpWave</h2>
-              <p class="desc" id="sharpwave_desc">An Android audio playing application.</p>
+              <h2 class="header" id="sharpwave_header">SharpWave</h2>
+              <p class="desc" id="sharpwave_desc">An Android audio playing application with a UI intended help navigate long audio tracks.</p>
             </div>
 
-            <div onclick="showSharpwave();" class="text" id="sharpwave">CLICK FOR MORE INFO</div>
+            <div onclick="showSharpwave();" class="text" id="sharpwave_text">CLICK FOR MORE INFO</div>
           </div>
         </div>
       </div>
@@ -450,12 +412,12 @@
           </div>
           <div class="middle">
             <div class="mask">
-              <h2 class="header">CS230 Assignments</h2>
+              <h2 class="header" id="cs230_header">CS230 Assignments</h2>
               <p class="desc" id="cs230_desc">Some of the assignments given for CS230 in Maynooth University. Includes DOM manipulation, CRUD operations,
                 LAMP stack, REST API, Cookies, Local Storage and AJAX.</p>
             </div>
 
-            <div onclick="showCS230();" class="text" id="watch">CLICK FOR MORE INFO</div>
+            <div onclick="showCS230();" class="text" id="cs230_text">CLICK FOR MORE INFO</div>
           </div>
         </div>
       </div>
@@ -468,14 +430,14 @@
             </div>
             <div class="middle">
               <div class="mask">
-                <h2 class="header">Biopodz</h2>
-                <p class="desc" id="biopodz_desc">A teaching aid for primary schools, with the aim of providing a positive association to growing and eating
+                <h2 class="header" id="biopodz_header">Biopodz</h2>
+                <p class="desc" id="biopodz_desc">A teaching aid for primary school children aged between 7 and 10, with the aim of providing a positive association to growing and eating
                   food.
                 </p>
               </div>
               <!-- end mask -->
   
-              <div onclick="showBiopodz();" class="text" id="watch">CLICK FOR MORE INFO</div>
+              <div onclick="showBiopodz();" class="text" id="biopodz_text">CLICK FOR MORE INFO</div>
             </div>
           </div>
         </div>
@@ -488,12 +450,12 @@
               </div>
               <div class="middle">
                 <div class="mask">
-                  <h2 class="header">Hi-Tik Mouse</h2>
-                  <p class="desc" id="hitik_desc">A computer mouse designed to help alleviate joint pain and repetitive strain injury</p>
+                  <h2 class="header" id="hitik_header">Hi-Tik Mouse</h2>
+                  <p class="desc" id="hitik_desc">A computer mouse designed to help alleviate joint pain and repetitive strain injury though ergonomics and touch screen technology</p>
                 </div>
                 <!-- end mask -->
     
-                <div onclick="showHitik();" class="text" id="hitik">CLICK FOR MORE INFO</div>
+                <div onclick="showHitik();" class="text" id="hitik_text">CLICK FOR MORE INFO</div>
               </div>
             </div>
           </div>
@@ -505,13 +467,13 @@
                 </div>
                 <div class="middle">
                   <div class="mask">
-                    <h2 class="header">Product Design Thesis</h2>
+                    <h2 class="header" id="thesis_header">Product Design Thesis</h2>
                     <p class="desc" id="thesis_desc">A thesis proposing alternative sustainable and environmentally friendier materials that have superior properties
                       than what we currently use in mass.</p>
                   </div>
                   <!-- end mask -->
       
-                  <div onclick="showThesis();" class="text" id="epee">CLICK FOR MORE INFO</div>
+                  <div onclick="showThesis();" class="text" id="thesis_text">CLICK FOR MORE INFO</div>
                 </div>
               </div>
             </div>
@@ -524,11 +486,11 @@
           </div>
           <div class="middle">
             <div class="mask">
-              <h2 class="header">Bad News Watch</h2>
-              <p class="desc" id="watch_desc">Using a custom built Indian bike, titled Bad News this watch design matches the bike's design.</p>
+              <h2 class="header" id="watch_header">Bad News Watch</h2>
+              <p class="desc" id="watch_desc">Using a custom built Indian bike as a theme, titled Bad News this wrist watch design matches the bike's shape and styling.</p>
             </div>
 
-            <div onclick="showWatch();" class="text" id="watch">CLICK FOR MORE INFO</div>
+            <div onclick="showWatch();" class="text" id="watch_text">CLICK FOR MORE INFO</div>
           </div>
         </div>
       </div>
@@ -536,35 +498,35 @@
 
 
       <div class="container">
-        <div id="watch">
+        <div id="epee">
           <div class="image_info">
             <img id="badWatch" class="imageThumbs" src="graphics/index_graphics/Epee_630.jpg"></img alt="Epee boots">
           </div>
           <div class="middle">
             <div class="mask">
-              <h2 class="header">Templar Epee</h2>
-              <p class="desc" id="epee_desc">A soccer boot design commerating Euro2016 held in France</p>
+              <h2 class="header" id="epee_header">Templar Epee</h2>
+              <p class="desc" id="epee_desc">A soccer boot design commerating Euro2016 held in France with a design pattern aimed at confusing a player's movement for the opposition</p>
             </div>
             <!-- end mask -->
 
-            <div onclick="showEpee();" class="text" id="epee">CLICK FOR MORE INFO</div>
+            <div onclick="showEpee();" class="text" id="epee_text">CLICK FOR MORE INFO</div>
           </div>
         </div>
       </div>
 
       <div class="container">
-        <div id="watch">
+        <div id="pen">
           <div class="image_info">
-            <img id="badWatch" class="imageThumbs" src="graphics/index_graphics/audi_pen_630.jpg"></img alt="Audi pen">
+            <img id="audiPen" class="imageThumbs" src="graphics/index_graphics/audi_pen_630.jpg"></img alt="Audi pen">
           </div>
           <div class="middle">
             <div class="mask">
-              <h2 class="header">Audi/Waldmann pen</h2>
+              <h2 class="header" id="pen_header">Audi/Waldmann pen</h2>
               <p class="desc" id="pen_desc">A complementary Waldmann pen for the purchase of an Audi A8</p>
             </div>
             <!-- end mask -->
 
-            <div onclick="showPen();" class="text" id="epee">CLICK FOR MORE INFO</div>
+            <div onclick="showPen();" class="text" id="pen_text">CLICK FOR MORE INFO</div>
           </div>
         </div>
       </div>
@@ -578,12 +540,12 @@
           </div>
           <div class="middle">
             <div class="mask">
-              <h2 class="header">MSI Signs</h2>
+              <h2 class="header" id="msi_header">MSI Signs</h2>
               <p class="desc" id="msi_desc">A collection of the work and designs created at my time at MSI Signs</p>
             </div>
             <!-- end mask -->
 
-            <div onclick="showMSI();" class="text" id="MSI">CLICK FOR MORE INFO</div>
+            <div onclick="showMSI();" class="text" id="msi_text">CLICK FOR MORE INFO</div>
           </div>
         </div>
       </div>
@@ -595,12 +557,12 @@
           </div>
           <div class="middle">
             <div class="mask">
-              <h2 class="header">Architectural Visualisation</h2>
+              <h2 class="header" id="archviz_header">Architectural Visualisation</h2>
               <p class="desc" id="archviz_desc">Some architectural visualisation renders of interiors and exteriors</p>
             </div>
             <!-- end mask -->
 
-            <div onclick="showArch();" class="text" id="arch">CLICK FOR MORE INFO</div>
+            <div onclick="showArch();" class="text" id="archviz_text">CLICK FOR MORE INFO</div>
           </div>
         </div>
       </div>
@@ -612,12 +574,12 @@
           </div>
           <div class="middle">
             <div class="mask">
-              <h2 class="header">iDrink</h2>
+              <h2 class="header" id="idrink_header">iDrink</h2>
               <p class="desc" id="idrink_desc">A portable draught beer dispenser using a peltier device</p>
             </div>
             <!-- end mask -->
 
-            <div onclick="showiDrink();" class="text" id="idrink">CLICK FOR MORE INFO</div>
+            <div onclick="showiDrink();" class="text" id="idrink_text">CLICK FOR MORE INFO</div>
           </div>
         </div>
       </div>

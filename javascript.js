@@ -5,55 +5,94 @@ function focus() {
 }
 
 function maxText() {
-  if(window.outerWidth > 1000) {
-    document.getElementById('cosmet_desc').style.fontSize = '1.7vw';
-    console.log(document.getElementById('cosmet_desc').style.fontSize = '1.7vw');
-    document.getElementById('sharpwave_desc').style.fontSize = '1.7vw';
-    document.getElementById('cs230_desc').style.fontSize = '1.7vw';
-    document.getElementById('biopodz_desc').style.fontSize = '1.7vw';
-    document.getElementById('hitik_desc').style.fontSize = '1.7vw';
-    document.getElementById('thesis_desc').style.fontSize = '1.7vw';
-    document.getElementById('watch_desc').style.fontSize = '1.7vw';
-    document.getElementById('epee_desc').style.fontSize = '1.7vw';
-    document.getElementById('pen_desc').style.fontSize = '1.7vw';
-    document.getElementById('msi_desc').style.fontSize = '1.7vw';
-    document.getElementById('archviz_desc').style.fontSize = '1.7vw';
-    document.getElementById('idrink_desc').style.fontSize = '1.7vw';
-  }
-  else if(window.outerWidth < 1000 || window.outerWidth > 500) {
-    document.getElementById('cosmet_desc').style.fontSize = '2.1vw';
-    console.log(document.getElementById('cosmet_desc').style.fontSize = '2.3vw');
-    document.getElementById('sharpwave_desc').style.fontSize = '2.3vw'; 
-    document.getElementById('cs230_desc').style.fontSize = '2.3vw';
-    document.getElementById('biopodz_desc').style.fontSize = '2.3vw';
-    document.getElementById('hitik_desc').style.fontSize = '2.3vw';
-    document.getElementById('thesis_desc').style.fontSize = '2.3vw';
-    document.getElementById('watch_desc').style.fontSize = '2.3vw';
-    document.getElementById('epee_desc').style.fontSize = '2.3vw';
-    document.getElementById('pen_desc').style.fontSize = '2.3vw';
-    document.getElementById('msi_desc').style.fontSize = '2.3vw';
-    document.getElementById('archviz_desc').style.fontSize = '2.3vw';
-    document.getElementById('idrink_desc').style.fontSize = '2.3vw';  
+
+  if(window.innerWidth < 1001 && window.innerWidth > 500) {
+    document.getElementById('cosmet_desc').style.fontSize = '1.8vw';
+    // console.log(document.getElementById('cosmet_desc').style.fontSize = '1.8vw');
+    document.getElementById('sharpwave_desc').style.fontSize = '1.8vw'; 
+    document.getElementById('cs230_desc').style.fontSize = '1.8vw';
+    document.getElementById('biopodz_desc').style.fontSize = '1.8vw';
+    document.getElementById('hitik_desc').style.fontSize = '1.8vw';
+    document.getElementById('thesis_desc').style.fontSize = '1.8vw';
+    document.getElementById('watch_desc').style.fontSize = '1.8vw';
+    document.getElementById('epee_desc').style.fontSize = '1.8vw';
+    document.getElementById('pen_desc').style.fontSize = '1.8vw';
+    document.getElementById('msi_desc').style.fontSize = '1.8vw';
+    document.getElementById('archviz_desc').style.fontSize = '1.8vw';
+    document.getElementById('idrink_desc').style.fontSize = '1.8vw';
+    
+    document.getElementById('cosmet_header').style.fontSize= '2vw';
+    document.getElementById('sharpwave_header').style.fontSize= '2vw';
+    document.getElementById('cs230_header').style.fontSize= '2vw';
+    document.getElementById('biopodz_header').style.fontSize= '2vw';
+    document.getElementById('hitik_header').style.fontSize= '2vw';
+    document.getElementById('thesis_header').style.fontSize= '2vw';
+    document.getElementById('watch_header').style.fontSize= '2vw';
+    document.getElementById('epee_header').style.fontSize= '2vw';
+    document.getElementById('pen_header').style.fontSize= '2vw';
+    document.getElementById('msi_header').style.fontSize= '2vw';
+    document.getElementById('archviz_header').style.fontSize= '2vw';
+    document.getElementById('idrink_header').style.fontSize= '2vw';
+
+    document.getElementById('cosmet_text').style.fontSize= '2.2vw';
+    document.getElementById('sharpwave_text').style.fontSize= '2.2vw';
+    document.getElementById('cs230_text').style.fontSize= '2.2vw';
+    document.getElementById('biopodz_text').style.fontSize= '2.2vw';
+    document.getElementById('hitik_text').style.fontSize= '2.2vw';
+    document.getElementById('thesis_text').style.fontSize= '2.2vw';
+    document.getElementById('watch_text').style.fontSize= '2.2vw';
+    document.getElementById('epee_text').style.fontSize= '2.2vw';
+    document.getElementById('pen_text').style.fontSize= '2.2vw';
+    document.getElementById('msi_text').style.fontSize= '2.2vw';
+    document.getElementById('archviz_text').style.fontSize= '2.2vw';
+    document.getElementById('idrink_text').style.fontSize= '2.2vw';
+
   }
 
-  else if(window.outerWidth < 1500 || window.outerWidth > 1000) {
-    document.getElementById('cosmet_desc').style.fontSize = '.1vw';
-    console.log(document.getElementById('cosmet_desc').style.fontSize = '2.3vw');
-    document.getElementById('sharpwave_desc').style.fontSize = '2.3vw'; 
-    document.getElementById('cs230_desc').style.fontSize = '2.3vw';
-    document.getElementById('biopodz_desc').style.fontSize = '2.3vw';
-    document.getElementById('hitik_desc').style.fontSize = '2.3vw';
-    document.getElementById('thesis_desc').style.fontSize = '2.3vw';
-    document.getElementById('watch_desc').style.fontSize = '2.3vw';
-    document.getElementById('epee_desc').style.fontSize = '2.3vw';
-    document.getElementById('pen_desc').style.fontSize = '2.3vw';
-    document.getElementById('msi_desc').style.fontSize = '2.3vw';
-    document.getElementById('archviz_desc').style.fontSize = '2.3vw';
-    document.getElementById('idrink_desc').style.fontSize = '2.3vw';  
+  else if(window.innerWidth < 1800 && window.innerWidth > 1002) {
+    document.getElementById('cosmet_desc').style.fontSize = '1.3vw';
+    console.log(document.getElementById('cosmet_desc').style.fontSize = '1.3vw');
+    document.getElementById('sharpwave_desc').style.fontSize = '1.3vw'; 
+    document.getElementById('cs230_desc').style.fontSize = '1.3vw';
+    document.getElementById('biopodz_desc').style.fontSize = '1.3vw';
+    document.getElementById('hitik_desc').style.fontSize = '1.3vw';
+    document.getElementById('thesis_desc').style.fontSize = '1.3vw';
+    document.getElementById('watch_desc').style.fontSize = '1.3vw';
+    document.getElementById('epee_desc').style.fontSize = '1.3vw';
+    document.getElementById('pen_desc').style.fontSize = '1.3vw';
+    document.getElementById('msi_desc').style.fontSize = '1.3vw';
+    document.getElementById('archviz_desc').style.fontSize = '1.3vw';
+    document.getElementById('idrink_desc').style.fontSize = '1.3vw';  
+
+    document.getElementById('cosmet_header').style.fontSize= '1.7vw';
+    document.getElementById('sharpwave_header').style.fontSize= '1.7vw';
+    document.getElementById('cs230_header').style.fontSize= '1.7vw';
+    document.getElementById('biopodz_header').style.fontSize= '1.7vw';
+    document.getElementById('hitik_header').style.fontSize= '1.7vw';
+    document.getElementById('thesis_header').style.fontSize= '1.7vw';
+    document.getElementById('watch_header').style.fontSize= '1.7vw';
+    document.getElementById('epee_header').style.fontSize= '1.7vw';
+    document.getElementById('pen_header').style.fontSize= '1.7vw';
+    document.getElementById('msi_header').style.fontSize= '1.7vw';
+    document.getElementById('archviz_header').style.fontSize= '1.7vw';
+    document.getElementById('idrink_header').style.fontSize= '1.7vw';
+
+    document.getElementById('cosmet_text').style.fontSize= '1.85vw';
+    document.getElementById('sharpwave_text').style.fontSize= '1.85vw';
+    document.getElementById('cs230_text').style.fontSize= '1.85vw';
+    document.getElementById('biopodz_text').style.fontSize= '1.85vw';
+    document.getElementById('hitik_text').style.fontSize= '1.85vw';
+    document.getElementById('thesis_text').style.fontSize= '1.85vw';
+    document.getElementById('watch_text').style.fontSize= '1.85vw';
+    document.getElementById('epee_text').style.fontSize= '1.85vw';
+    document.getElementById('pen_text').style.fontSize= '1.85vw';
+    document.getElementById('msi_text').style.fontSize= '1.85vw';
+    document.getElementById('archviz_text').style.fontSize= '1.85vw';
+    document.getElementById('idrink_text').style.fontSize= '1.85vw';
   }
 
-  else if(window.outerWidth < 500) {
-    document.getElementById('cosmet_desc').style.display = 'none';
+  else if(window.innerWidth < 499) {
+    // document.getElementById('cosmet_desc').style.display = 'none';
     console.log(document.getElementById('cosmet_desc').style.fontSize = '3vw');
     document.getElementById('sharpwave_desc').style.fontSize = '3vw'; 
     document.getElementById('cs230_desc').style.style.fontSize = '3vw';
@@ -66,12 +105,25 @@ function maxText() {
     document.getElementById('msi_desc').style.fontSize = '3vw';
     document.getElementById('archviz_desc').style.fontSize = '3vw';
     document.getElementById('idrink_desc').style.fontSize = '3vw';  
+
+    document.getElementById('cosmet_header').style.fontSize= '3.2vw';
+    document.getElementById('sharpwave_header').style.fontSize= '3.2vw';
+    document.getElementById('cs230_header').style.fontSize= '3.2vw';
+    document.getElementById('biopodz_header').style.fontSize= '3.2vw';
+    document.getElementById('hitik_header').style.fontSize= '3.2vw';
+    document.getElementById('thesis_header').style.fontSize= '3.2vw';
+    document.getElementById('watch_header').style.fontSize= '3.2vw';
+    document.getElementById('epee_header').style.fontSize= '3.2vw';
+    document.getElementById('pen_header').style.fontSize= '3.2vw';
+    document.getElementById('msi_header').style.fontSize= '3.2vw';
+    document.getElementById('archviz_header').style.fontSize= '3.2vw';
+    document.getElementById('idrink_header').style.fontSize= '3.2vw';
   }
   else {
-    document.getElementById('cosmet_desc').style.display = 'none';
+    // document.getElementById('cosmet_desc').style.display = 'none';
     console.log(document.getElementById('cosmet_desc').style.fontSize = '2vw');
     document.getElementById('sharpwave_desc').style.fontSize = '2vw'; 
-    document.getElementById('cs230_desc').style.style.fontSize = '2vw';
+    document.getElementById('cs230_desc').style.fontSize = '2vw';
     document.getElementById('biopodz_desc').style.fontSize = '2vw';
     document.getElementById('hitik_desc').style.fontSize = '2vw';
     document.getElementById('thesis_desc').style.fontSize = '2vw';
@@ -81,6 +133,32 @@ function maxText() {
     document.getElementById('msi_desc').style.fontSize = '2vw';
     document.getElementById('archviz_desc').style.fontSize = '2vw';
     document.getElementById('idrink_desc').style.fontSize = '2vw';  
+
+    document.getElementById('cosmet_header').style.fontSize= '2.2vw';
+    document.getElementById('sharpwave_header').style.fontSize= '2.2vw';
+    document.getElementById('cs230_header').style.fontSize= '2.2vw';
+    document.getElementById('biopodz_header').style.fontSize= '2.2vw';
+    document.getElementById('hitik_header').style.fontSize= '2.2vw';
+    document.getElementById('thesis_header').style.fontSize= '2.2vw';
+    document.getElementById('watch_header').style.fontSize= '2.2vw';
+    document.getElementById('epee_header').style.fontSize= '2.2vw';
+    document.getElementById('pen_header').style.fontSize= '2.2vw';
+    document.getElementById('msi_header').style.fontSize= '2.2vw';
+    document.getElementById('archviz_header').style.fontSize= '2.2vw';
+    document.getElementById('idrink_header').style.fontSize= '2.2vw';
+
+    document.getElementById('cosmet_text').style.fontSize= '2.5vw';
+    document.getElementById('sharpwave_text').style.fontSize= '2.5vw';
+    document.getElementById('cs230_text').style.fontSize= '2.5vw';
+    document.getElementById('biopodz_text').style.fontSize= '2.5vw';
+    document.getElementById('hitik_text').style.fontSize= '2.5vw';
+    document.getElementById('thesis_text').style.fontSize= '2.5vw';
+    document.getElementById('watch_text').style.fontSize= '2.5vw';
+    document.getElementById('epee_text').style.fontSize= '2.5vw';
+    document.getElementById('pen_text').style.fontSize= '2.5vw';
+    document.getElementById('msi_text').style.fontSize= '2.5vw';
+    document.getElementById('archviz_text').style.fontSize= '2.5vw';
+    document.getElementById('idrink_text').style.fontSize= '2.5vw';
   }
 }
 
@@ -94,40 +172,42 @@ function growShrinkNav() {
 
   if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 20) {
 		textFlag = false;
-    navIcon1.style.width = "60%";
-    navIcon1.style.transition = 'all ease .5s';
-    navIcon1.style.marginLeft = '0';
-    navIcon2.style.width = "60%";
-    navIcon2.style.transition = 'all ease .5s';
-    navIcon2.style.marginLeft = '0';
-    navIcon3.style.width = "60%";
-    navIcon3.style.transition = 'all ease .5s';
-    navIcon3.style.marginLeft = '0';
-    navIcon4.style.width = "60%";
-    navIcon4.style.transition = 'all ease .5s';
-    navIcon4.style.marginLeft = '0';
-    navIcon5.style.width = "60%";
-    navIcon5.style.transition = 'all ease .5s';
-    navIcon5.style.marginLeft = '0';
-    Logo.style.width = '70px';
-    Logo.style.transition = 'all ease .5s';
-
-
-  } else {
-    navIcon1.style.width = "45px";
-    navIcon1.style.marginLeft = '7px';
-    navIcon2.style.width = "45px";
+    navIcon1.style.width = "38px";
+    navIcon1.style.marginLeft = '10px';
+    navIcon2.style.width = "38px";
     navIcon2.style.marginLeft = '7px';
-    navIcon3.style.width = "45px";
+    navIcon3.style.width = "38px";
     navIcon3.style.marginLeft = '7px';
-    navIcon4.style.width = "45px";
+    navIcon4.style.width = "38px";
     navIcon4.style.marginLeft = '7px';
-    navIcon5.style.width = "45px";
+    navIcon5.style.width = "38px";
     navIcon5.style.marginLeft = '7px';
     Logo.style.width = '62px';
     Logo.style.padding = '2px';
     Logo.style.transition = 'all ease .5s';
-		textFlag = true;
+
+
+  } else {
+
+    textFlag = true;
+    
+    navIcon1.style.width = "70%";
+    navIcon1.style.transition = 'all ease .5s';
+    navIcon1.style.marginLeft = '-5px';
+    navIcon2.style.width = "70%";
+    navIcon2.style.transition = 'all ease .5s';
+    navIcon2.style.marginLeft = '-3px';
+    navIcon3.style.width = "70%";
+    navIcon3.style.transition = 'all ease .5s';
+    navIcon3.style.marginLeft = '-3px';
+    navIcon4.style.width = "70%";
+    navIcon4.style.transition = 'all ease .5s';
+    navIcon4.style.marginLeft = '-3px';
+    navIcon5.style.width = "70%";
+    navIcon5.style.transition = 'all ease .5s';
+    navIcon5.style.marginLeft = '-3px';
+    Logo.style.width = '70px';
+    Logo.style.transition = 'all ease .5s';
   }
 }
 
