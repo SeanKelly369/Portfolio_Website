@@ -684,7 +684,7 @@ transition: all .2s ease-in-out;
 
 /* Media Queries */
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 920px) {
 
   #outer-grid {
     display: inline-block;
@@ -725,13 +725,13 @@ transition: all .2s ease-in-out;
     width: 120%;
   }
   .nav-text {
-    font-size: 3rem;
+    font-size: 1.83rem;
   }
 
   #navIcon1, #navIcon2, #navIcon3, #navIcon4, #navIcon5 {
     transform: scale(1.3);
     margin-bottom: 12px;
-    padding-left: 8px;
+    padding-right: 6px;
   }
 
   #navIcon1:hover, #navIcon2:hover, #navIcon3:hover, #navIcon4:hover, #navIcon5:hover {
