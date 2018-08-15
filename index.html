@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html onload="maxText();">
 
 
-<head>
+<head >
   <meta charset="utf-8">
 
   <meta name="portfolio design product web webdesign programming javascript java CV resume about inforgraphics bio biography graphics biopodz thesis branding packaging sign-making 3d art artist digital max photoshop watch pen audi indian industry painting development environment model-making sketching CNC CAD blender opensource autodesk 3dsmax vray cycles creativity vinyl print"
@@ -27,7 +27,7 @@
   <title>Sean Kelly Software & Product Design</title>
 </head>
 
-<body onscroll="growShrinkNav()" onresize="sizeChange();">
+<body onscroll="growShrinkNav();" onresize="maxText();">
   <!-- Navbar code -->
   <segment id="container">
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -401,24 +401,26 @@
 
 
     <div id="outer-grid">
-      <div class="container">
-        <div id="watch">
-          <div class="image_info">
-            <img id="badWatch" class="imageThumbs" src="graphics/index_graphics/biopodz_630.jpg"></img alt="analog watch design">
-          </div>
-          <div class="middle">
-            <div class="mask">
-              <h2 class="header">Biopodz</h2>
-              <p class="desc">A teaching aid for primary schools, with the aim of providing a positive association to growing and eating
-                food.
-              </p>
-            </div>
-            <!-- end mask -->
 
-            <div onclick="showBiopodz();" class="text" id="watch">CLICK FOR MORE INFO</div>
+        <div class="container">
+            <div id="cosmet">
+              <div class="image_info">
+                <img id="cosmet630" class="imageThumbs" src="graphics/index_graphics/cozmet_630.jpg"></img alt="analog watch design">
+              </div>
+              <div class="middle">
+                <div class="mask">
+                  <h2 class="header">Cozmet</h2>
+                  <p class="desc" id="cosmet_desc">An application containing information on new cosmetic products and the expiry date of current products owned
+                    by the user.</p>
+                </div>
+    
+                <div onclick="showCozmet();" class="text" >CLICK FOR MORE INFO</div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+          <!-- end watch container -->
+
+
 
       <div class="container">
         <div id="cosmet">
@@ -428,7 +430,7 @@
           <div class="middle">
             <div class="mask">
               <h2 class="header">SharpWave</h2>
-              <p class="desc">An Android audio playing application.</p>
+              <p class="desc" id="sharpwave_desc">An Android audio playing application.</p>
             </div>
 
             <div onclick="showSharpwave();" class="text" id="sharpwave">CLICK FOR MORE INFO</div>
@@ -438,23 +440,7 @@
       <!-- end watch container -->
 
 
-      <div class="container">
-        <div id="cosmet">
-          <div class="image_info">
-            <img id="cosmet630" class="imageThumbs" src="graphics/index_graphics/cozmet_630.jpg"></img alt="analog watch design">
-          </div>
-          <div class="middle">
-            <div class="mask">
-              <h2 class="header">Cozmet</h2>
-              <p class="desc">An application containing information on new cosmetic products and the expiry date of current products owned
-                by the user.</p>
-            </div>
 
-            <div onclick="showCozmet();" class="text" id="cosmet">CLICK FOR MORE INFO</div>
-          </div>
-        </div>
-      </div>
-      <!-- end watch container -->
 
 
       <div class="container">
@@ -465,7 +451,7 @@
           <div class="middle">
             <div class="mask">
               <h2 class="header">CS230 Assignments</h2>
-              <p class="desc">Some of the assignments given for CS230 in Maynooth University. Includes DOM manipulation, CRUD operations,
+              <p class="desc" id="cs230_desc">Some of the assignments given for CS230 in Maynooth University. Includes DOM manipulation, CRUD operations,
                 LAMP stack, REST API, Cookies, Local Storage and AJAX.</p>
             </div>
 
@@ -476,6 +462,62 @@
       <!-- end CS230 container -->
 
       <div class="container">
+          <div id="biopodz">
+            <div class="image_info">
+              <img id="badWatch" class="imageThumbs" src="graphics/index_graphics/biopodz_630.jpg"></img alt="analog watch design">
+            </div>
+            <div class="middle">
+              <div class="mask">
+                <h2 class="header">Biopodz</h2>
+                <p class="desc" id="biopodz_desc">A teaching aid for primary schools, with the aim of providing a positive association to growing and eating
+                  food.
+                </p>
+              </div>
+              <!-- end mask -->
+  
+              <div onclick="showBiopodz();" class="text" id="watch">CLICK FOR MORE INFO</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container">
+            <div id="hitikMouse">
+              <div class="image_info">
+                <img id="hitikmouse" class="imageThumbs" src="graphics/index_graphics/mouse_630.jpg"></img alt="Audi pen">
+              </div>
+              <div class="middle">
+                <div class="mask">
+                  <h2 class="header">Hi-Tik Mouse</h2>
+                  <p class="desc" id="hitik_desc">A computer mouse designed to help alleviate joint pain and repetitive strain injury</p>
+                </div>
+                <!-- end mask -->
+    
+                <div onclick="showHitik();" class="text" id="hitik">CLICK FOR MORE INFO</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+              <div id="watch">
+                <div class="image_info">
+                  <img id="badWatch" class="imageThumbs" src="graphics/index_graphics/thesis-logo.png"></img alt="Thesis">
+                </div>
+                <div class="middle">
+                  <div class="mask">
+                    <h2 class="header">Product Design Thesis</h2>
+                    <p class="desc" id="thesis_desc">A thesis proposing alternative sustainable and environmentally friendier materials that have superior properties
+                      than what we currently use in mass.</p>
+                  </div>
+                  <!-- end mask -->
+      
+                  <div onclick="showThesis();" class="text" id="epee">CLICK FOR MORE INFO</div>
+                </div>
+              </div>
+            </div>
+
+
+      <div class="container">
         <div id="watch">
           <div class="image_info">
             <img id="badWatch" class="imageThumbs" src="graphics/index_graphics/bad_news_watch_630.jpg"></img alt="analog watch design">
@@ -483,7 +525,7 @@
           <div class="middle">
             <div class="mask">
               <h2 class="header">Bad News Watch</h2>
-              <p class="desc">Using a custom built Indian bike, titled Bad News this watch design matches the bike's design.</p>
+              <p class="desc" id="watch_desc">Using a custom built Indian bike, titled Bad News this watch design matches the bike's design.</p>
             </div>
 
             <div onclick="showWatch();" class="text" id="watch">CLICK FOR MORE INFO</div>
@@ -501,7 +543,7 @@
           <div class="middle">
             <div class="mask">
               <h2 class="header">Templar Epee</h2>
-              <p class="desc">A soccer boot design commerating Euro2016 held in France</p>
+              <p class="desc" id="epee_desc">A soccer boot design commerating Euro2016 held in France</p>
             </div>
             <!-- end mask -->
 
@@ -518,7 +560,7 @@
           <div class="middle">
             <div class="mask">
               <h2 class="header">Audi/Waldmann pen</h2>
-              <p class="desc">A complementary Waldmann pen for the purchase of an Audi A8</p>
+              <p class="desc" id="pen_desc">A complementary Waldmann pen for the purchase of an Audi A8</p>
             </div>
             <!-- end mask -->
 
@@ -527,40 +569,7 @@
         </div>
       </div>
 
-      <div class="container">
-        <div id="watch">
-          <div class="image_info">
-            <img id="badWatch" class="imageThumbs" src="graphics/index_graphics/thesis-logo.png"></img alt="Thesis">
-          </div>
-          <div class="middle">
-            <div class="mask">
-              <h2 class="header">Product Design Thesis</h2>
-              <p class="desc">A thesis proposing alternative sustainable and environmentally friendier materials that have superior properties
-                than what we currently use in mass.</p>
-            </div>
-            <!-- end mask -->
 
-            <div onclick="showThesis();" class="text" id="epee">CLICK FOR MORE INFO</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div id="hitikMouse">
-          <div class="image_info">
-            <img id="hitikmouse" class="imageThumbs" src="graphics/index_graphics/mouse_630.jpg"></img alt="Audi pen">
-          </div>
-          <div class="middle">
-            <div class="mask">
-              <h2 class="header">Hi-Tik Mouse</h2>
-              <p class="desc">A computer mouse designed to help alleviate joint pain and repetitive strain injury</p>
-            </div>
-            <!-- end mask -->
-
-            <div onclick="showHitik();" class="text" id="hitik">CLICK FOR MORE INFO</div>
-          </div>
-        </div>
-      </div>
 
       <div class="container">
         <div id="msisigns">
@@ -570,7 +579,7 @@
           <div class="middle">
             <div class="mask">
               <h2 class="header">MSI Signs</h2>
-              <p class="desc">A collection of the work and designs created at my time at MSI Signs</p>
+              <p class="desc" id="msi_desc">A collection of the work and designs created at my time at MSI Signs</p>
             </div>
             <!-- end mask -->
 
@@ -587,7 +596,7 @@
           <div class="middle">
             <div class="mask">
               <h2 class="header">Architectural Visualisation</h2>
-              <p class="desc">Some architectural visualisation renders of interiors and exteriors</p>
+              <p class="desc" id="archviz_desc">Some architectural visualisation renders of interiors and exteriors</p>
             </div>
             <!-- end mask -->
 
@@ -604,7 +613,7 @@
           <div class="middle">
             <div class="mask">
               <h2 class="header">iDrink</h2>
-              <p class="desc">A portable draught beer dispenser using a peltier device</p>
+              <p class="desc" id="idrink_desc">A portable draught beer dispenser using a peltier device</p>
             </div>
             <!-- end mask -->
 
@@ -627,49 +636,49 @@
           <div id="footer-icons">
             <div>
               <a href="mailto:sean@kelly3d.com" target="_blank">
-                <img id="icons" class="imageThumbs" src="graphics/icon_links/Email.png"></img alt="Email">
+                <img id="icons" class="footerThumbs" src="graphics/icon_links/Email.png"></img alt="Email">
               </a>
             </div>
 
             <div>
               <a href="https://www.linkedin.com/in/sean-kelly-0233b113/" target="_blank">
-                <img id="icons" class="imageThumbs" src="graphics/icon_links/LinkedIn.png"></img alt="LinkedIn">
+                <img id="icons" class="footerThumbs" src="graphics/icon_links/LinkedIn.png"></img alt="LinkedIn">
               </a>
             </div>
 
             <div>
               <a href="https://www.hackerrank.com/sean_kelly_2018" target="_blank">
-                <img id="icons" class="imageThumbs" src="graphics/icon_links/hackerrank.png"></img alt="Hackerrank">
+                <img id="icons" class="footerThumbs" src="graphics/icon_links/hackerrank.png"></img alt="Hackerrank">
               </a>
             </div>
 
             <div>
               <a href="https://leetcode.com/seankelly369/" target="_blank">
-                <img id="icons" class="imageThumbs" src="graphics/icon_links/leetcode.png"></img alt="Leetcode">
+                <img id="icons" class="footerThumbs" src="graphics/icon_links/leetcode.png"></img alt="Leetcode">
               </a>
             </div>
 
             <div>
               <a href="https://github.com/SeanKelly369" target="_blank">
-                <img id="icons" class="imageThumbs" src="graphics/icon_links/Github.png"></img alt="Github">
+                <img id="icons" class="footerThumbs" src="graphics/icon_links/Github.png"></img alt="Github">
               </a>
             </div>
 
             <div>
               <a href="https://www.freecodecamp.org/fcc2e0990a1-5740-49d9-8eb2-7ec40a488947" target="_blank">
-                <img id="icons" class="imageThumbs" src="graphics/icon_links/FreeCodeCamp.png"></img alt="Free Code Camp">
+                <img id="icons" class="footerThumbs" src="graphics/icon_links/FreeCodeCamp.png"></img alt="Free Code Camp">
               </a>
 
             </div>
             <div>
               <a href="https://www.pinterest.ie/seankell2000/" target="_blank">
-                <img id="icons" class="imageThumbs" src="graphics/icon_links/Pinterest.png"></img alt="Pinterest">
+                <img id="icons" class="footerThumbs" src="graphics/icon_links/Pinterest.png"></img alt="Pinterest">
               </a>
             </div>
 
             <div>
               <a href="https://www.behance.net/Sean_Kelly" target="_blank">
-                <img id="icons" class="imageThumbs" src="graphics/icon_links/Behance.png"></img alt="Behance">
+                <img id="icons" class="footerThumbs" src="graphics/icon_links/Behance.png"></img alt="Behance">
               </a>
             </div>
           </div>

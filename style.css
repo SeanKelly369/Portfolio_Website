@@ -162,36 +162,37 @@ a:visited {
   border-width: .45rem;
   border-color: #bbb;
   border-style: solid;
+  filter: blur(0px);
+  backface-visibility: hidden;
+  opacity: .4
 }
 
+.imageThumbs:hover {
+  transform: scale(1);
+  filter: blur(0);
+  transition: all .4s;
+}
+
+.footerThumbs {
+  width: 99%;
+  border-width: .45rem;
+  border-style: solid;
+}
 
 .container:hover {
   filter: brightness(120%);
   transition: ease-in-out .2s;
   background-color:#ccc;
-  /* transform: scale(110%, 110%); */
   width: 110%;
-  /* transform: translate(-5%, -5%); */
-  /* -ms-transform: translate(-50%, -50%); */
-
 }
 
 .container {
     position: relative;
     width: 50%;
     opacity: .8;
+    backface-visibility: hidden;
 }
 
-/* .container:hover .imageThumbs {
-  opacity: 1;
-
-} */
-
-/* .container:hover .middle {
-
-  animation: fadeAndScale .62s ease-out;
-  animation-delay: .4s;
-} */
 
 .middle {
   width: 70%;
@@ -205,38 +206,40 @@ a:visited {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-	transition-delay:.37s;
+  transition-delay:.37s;
+  backface-visibility: hidden;
 }
 
-/* .imageThumbs:hover {
-  width: 96%;
-  transition: all ease 10s;
-  transform: translate(2%, 2%);
-} */
-
-
 .header {
-  margin-bottom: 2rem;
-  background-color: #444444aa;
-  color: white;
-  font-size: 1.9rem;
-  margin-top: .2rem;
-  border-radius: 5px;
+  margin-bottom: 1rem;
+  background-color: #ffe100;
+  color: rgb(31, 48, 14);
+  font-size: 2.4vw;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  border-radius: 2px;
+  transform: translateY(-1%);
 }
 
 .text {
-  background-color: #444444aa;
-  color: white;
-  font-size: 1.5rem;
+  background-color: #ffffff88;
+  color: rgb(31, 48, 14);
+  font-weight: 300;
+  font-size: 2.2vw;
   margin-top: 2rem;
   padding: 6% 3%;
 	transform: translate(0%, 0%);
   cursor: pointer;
-	border-radius: .3rem;
+  border-radius: .3rem;
+  backface-visibility: hidden;
 }
 
+
 .text:hover {
-  background-color: #777777aa;
+  background-color: #ffffffbb;
+  color: rgb(51, 65, 36);
+  font-weight: 400;
+
 	/* width: 100%;
 	height: 100%;
 	transform: translate(-10%, 5%);
@@ -244,7 +247,6 @@ a:visited {
   transition: all ease 0s; */
 	/* text-transform: 20px;
   font-size: 1.18vw; */
-
 }
 
 /* @keyframes fadeAndScale {
@@ -264,12 +266,20 @@ a:visited {
 
 .desc {
   font-style: italic;
-  font-size: 2rem;
+  /* font-size: 2vw; */
   text-align: center;
   animation-delay: .4s;
-  color: white;
-  background-color: #444444aa;
+  color: rgb(26, 35, 17);
+  background-color: #ffffff55;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
+
+#cosmet_desc, #sharpwave_desc, #cs230_desc, #biopodz_desc, #hitik_desc, #thesis_desc, #watch_desc, #epee_desc, #pen_desc, #msi_desc, #archviz_desc, #idrink_desc {
+  font-size: 2vw;
+  font-weight: 600;
+}
+
 
 #watchDetails, #biopodzDetails, #epeeDetails, #penDetails, #cosmetDetails, #sharpwaveDetails, #hitikDetails, #archDetails, #iDrinkDetails, #CS230Details, #AboutMeDetails {
   position: fixed;

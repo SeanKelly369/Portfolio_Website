@@ -1,5 +1,89 @@
 let textFlag = true;
 
+function focus() {
+  document.getElementById('cosmet630').style.filter = 'blur'
+}
+
+function maxText() {
+  if(window.outerWidth > 1000) {
+    document.getElementById('cosmet_desc').style.fontSize = '1.7vw';
+    console.log(document.getElementById('cosmet_desc').style.fontSize = '1.7vw');
+    document.getElementById('sharpwave_desc').style.fontSize = '1.7vw';
+    document.getElementById('cs230_desc').style.fontSize = '1.7vw';
+    document.getElementById('biopodz_desc').style.fontSize = '1.7vw';
+    document.getElementById('hitik_desc').style.fontSize = '1.7vw';
+    document.getElementById('thesis_desc').style.fontSize = '1.7vw';
+    document.getElementById('watch_desc').style.fontSize = '1.7vw';
+    document.getElementById('epee_desc').style.fontSize = '1.7vw';
+    document.getElementById('pen_desc').style.fontSize = '1.7vw';
+    document.getElementById('msi_desc').style.fontSize = '1.7vw';
+    document.getElementById('archviz_desc').style.fontSize = '1.7vw';
+    document.getElementById('idrink_desc').style.fontSize = '1.7vw';
+  }
+  else if(window.outerWidth < 1000 || window.outerWidth > 500) {
+    document.getElementById('cosmet_desc').style.fontSize = '2.1vw';
+    console.log(document.getElementById('cosmet_desc').style.fontSize = '2.3vw');
+    document.getElementById('sharpwave_desc').style.fontSize = '2.3vw'; 
+    document.getElementById('cs230_desc').style.fontSize = '2.3vw';
+    document.getElementById('biopodz_desc').style.fontSize = '2.3vw';
+    document.getElementById('hitik_desc').style.fontSize = '2.3vw';
+    document.getElementById('thesis_desc').style.fontSize = '2.3vw';
+    document.getElementById('watch_desc').style.fontSize = '2.3vw';
+    document.getElementById('epee_desc').style.fontSize = '2.3vw';
+    document.getElementById('pen_desc').style.fontSize = '2.3vw';
+    document.getElementById('msi_desc').style.fontSize = '2.3vw';
+    document.getElementById('archviz_desc').style.fontSize = '2.3vw';
+    document.getElementById('idrink_desc').style.fontSize = '2.3vw';  
+  }
+
+  else if(window.outerWidth < 1500 || window.outerWidth > 1000) {
+    document.getElementById('cosmet_desc').style.fontSize = '.1vw';
+    console.log(document.getElementById('cosmet_desc').style.fontSize = '2.3vw');
+    document.getElementById('sharpwave_desc').style.fontSize = '2.3vw'; 
+    document.getElementById('cs230_desc').style.fontSize = '2.3vw';
+    document.getElementById('biopodz_desc').style.fontSize = '2.3vw';
+    document.getElementById('hitik_desc').style.fontSize = '2.3vw';
+    document.getElementById('thesis_desc').style.fontSize = '2.3vw';
+    document.getElementById('watch_desc').style.fontSize = '2.3vw';
+    document.getElementById('epee_desc').style.fontSize = '2.3vw';
+    document.getElementById('pen_desc').style.fontSize = '2.3vw';
+    document.getElementById('msi_desc').style.fontSize = '2.3vw';
+    document.getElementById('archviz_desc').style.fontSize = '2.3vw';
+    document.getElementById('idrink_desc').style.fontSize = '2.3vw';  
+  }
+
+  else if(window.outerWidth < 500) {
+    document.getElementById('cosmet_desc').style.display = 'none';
+    console.log(document.getElementById('cosmet_desc').style.fontSize = '3vw');
+    document.getElementById('sharpwave_desc').style.fontSize = '3vw'; 
+    document.getElementById('cs230_desc').style.style.fontSize = '3vw';
+    document.getElementById('biopodz_desc').style.fontSize = '3vw';
+    document.getElementById('hitik_desc').style.fontSize = '3vw';
+    document.getElementById('thesis_desc').style.fontSize = '3vw';
+    document.getElementById('watch_desc').style.fontSize = '3vw';
+    document.getElementById('epee_desc').style.fontSize = '3vw';
+    document.getElementById('pen_desc').style.fontSize = '3vw';
+    document.getElementById('msi_desc').style.fontSize = '3vw';
+    document.getElementById('archviz_desc').style.fontSize = '3vw';
+    document.getElementById('idrink_desc').style.fontSize = '3vw';  
+  }
+  else {
+    document.getElementById('cosmet_desc').style.display = 'none';
+    console.log(document.getElementById('cosmet_desc').style.fontSize = '2vw');
+    document.getElementById('sharpwave_desc').style.fontSize = '2vw'; 
+    document.getElementById('cs230_desc').style.style.fontSize = '2vw';
+    document.getElementById('biopodz_desc').style.fontSize = '2vw';
+    document.getElementById('hitik_desc').style.fontSize = '2vw';
+    document.getElementById('thesis_desc').style.fontSize = '2vw';
+    document.getElementById('watch_desc').style.fontSize = '2vw';
+    document.getElementById('epee_desc').style.fontSize = '2vw';
+    document.getElementById('pen_desc').style.fontSize = '2vw';
+    document.getElementById('msi_desc').style.fontSize = '2vw';
+    document.getElementById('archviz_desc').style.fontSize = '2vw';
+    document.getElementById('idrink_desc').style.fontSize = '2vw';  
+  }
+}
+
 function growShrinkNav() {
   let Logo = document.getElementById("logo_header");
   let navIcon1 = document.getElementById("navIcon1");
@@ -25,17 +109,9 @@ function growShrinkNav() {
     navIcon5.style.width = "60%";
     navIcon5.style.transition = 'all ease .5s';
     navIcon5.style.marginLeft = '0';
-
     Logo.style.width = '70px';
-		innerNav.style.marginTop = '.5%';
-    // nav.style.height = '54px';
     Logo.style.transition = 'all ease .5s';
-    nav_links.style.transition = 'all ease .5s';
-    nav_links.style.height = '38px';
-		innerNav.style.fontSize = '12px';
-    innerNav.style.transition = 'all easy .5s';
-    navLinkCell.style.gridGap = '5rem';
-    aboutme.style.fontSize = '3rem';
+
 
   } else {
     navIcon1.style.width = "45px";
@@ -50,101 +126,50 @@ function growShrinkNav() {
     navIcon5.style.marginLeft = '7px';
     Logo.style.width = '62px';
     Logo.style.padding = '2px';
-    nav.style.height = '80px';
-    // nav_links.style.height = '60px';
-    nav_links.style.transition = 'all ease .5s';
     Logo.style.transition = 'all ease .5s';
-		// innerNav.style.marginTop = '1%';
-		// innerNav.style.fontSize = '14px';
-		// innerNav.style.transition = 'all ease .5s';
 		textFlag = true;
-
   }
 }
 
-// function sizeChange() {
-//   if (window.outerWidth < 600 && window.outerWidth > 499) {
-// 		if(textFlag){
-// 			// innerNav.style.fontSize = '10px';
-// 		}else if(textFlag = false){
-// 				innerNav.style.fontSize = '12px';
-// 		}
-//     nav_links.style.width = '66%';
-//     nav_links.style.marginRight = '60px';
-//   } else if (window.outerWidth < 700 && window.outerWidth > 600) {
-//     nav_links.style.width = '70%';
-//     nav_links.style.marginRight = '80px';
-// 		if(textFlag) {
-// 			innerNav.style.fontSize = '12px';
-// 		}
-
-//   } else if (window.outerWidth < 499) {
-//     nav_links.style.width = '62%';
-//     nav_links.style.marginRight = '30px';
-// 		if(textFlag){
-// 			innerNav.style.fontSize = '7px';
-// 		}else if(textFlag = false){
-// 				innerNav.style.fontSize = '12px';
-// 		}
-// 		// innerNav.style.fontSize = '7px';
-// 		innerNav.style.padding = '2px';
-
-//   } else if (window.outerWidth < 800 && window.outerWidth > 700) {
-//     nav_links.style.width = '72%';
-//     nav_links.style.marginRight = '90px';
-//     footer.style.height = '4vh';
-
-//   } else if (window.outerWidth < 1000 && window.outerWidth > 800){
-
-//     footer.style.height = '5vh';
-//   }
-
-//   else {
-//     nav_links.style.width = '76%';
-//     nav_links.style.marginRight = '100px';
-//     footer.style.height = '6vh';
-//   }
-// }
-
 //Open window showing details about the Sioux Watch
 function showWatch() {
-	let watchDetails = document.getElementById("watchDetails").style.display = 'block';
-	let overlayOpen = document.getElementById('overlay').style.display = 'block';
+	document.getElementById("watchDetails").style.display = 'block';
+	document.getElementById('overlay').style.display = 'block';
 	document.getElementById('overlay').style.transition = 'all ease .5s';
 }
 
 //Open window showing details about Biopodz
 function showBiopodz() {
-	let biopodzDetails = document.getElementById("biopodzDetails").style.display = 'block';
-	let overlayOpen = document.getElementById('overlay').style.display = 'block';
+	document.getElementById("biopodzDetails").style.display = 'block';
+	document.getElementById('overlay').style.display = 'block';
 	document.getElementById('overlay').style.transition = 'all ease .5s';
 }
 
 //Open window showing details about Epee football boots
 function showEpee() {
-	let epeeDetails = document.getElementById("epeeDetails").style.display = 'block';
-	let overlayOpen = document.getElementById('overlay').style.display = 'block';
+	document.getElementById("epeeDetails").style.display = 'block';
+	document.getElementById('overlay').style.display = 'block';
 	document.getElementById('overlay').style.transition = 'all ease .5s';
 }
 
 //Open window showing details about Cozmet
 function showCozmet() {
-	let cozmetDetails = document.getElementById("cosmetDetails").style.display = 'block';
-	let overlayOpen = document.getElementById('overlay').style.display = 'block';
+	document.getElementById("cosmetDetails").style.display = 'block';
+	document.getElementById('overlay').style.display = 'block';
 	document.getElementById('overlay').style.transition = 'all ease .5s';
 }
 
 //Open window showing details about Epee football Audi pen
 function showPen() {
-	let penDetails = document.getElementById("penDetails").style.display = 'block';
-	let overlayOpen = document.getElementById('overlay').style.display = 'block';
+	document.getElementById("penDetails").style.display = 'block';
+	document.getElementById('overlay').style.display = 'block';
 	document.getElementById('overlay').style.transition = 'all ease .5s';
 }
 
 //Open window showing details about Sharpwave
 function showSharpwave() {
-	let sharpwaveDetails = document.getElementById("sharpwaveDetails").style.display = 'block';
-	let overlayOpen = document.getElementById('overlay').style.display = 'block';
+	document.getElementById("sharpwaveDetails").style.display = 'block';
+	document.getElementById('overlay').style.display = 'block';
 	document.getElementById('overlay').style.transition = 'all ease .5s';
 }
 
