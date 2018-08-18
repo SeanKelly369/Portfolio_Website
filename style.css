@@ -144,7 +144,7 @@ a:visited {
 #outer-grid {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 1.25rem;
   width: auto;
   height: auto;
@@ -228,7 +228,7 @@ a:visited {
 }
 
 #cosmet_header, #sharpwave_header, #cs230_header, #biopodz_header, #hitik_header, #thesis_header, #watch_header, #epee_header, #pen_header, #msi_header, #archviz_header, #idrink_header {
-  font-size: 2.4vw;
+  font-size: 1.7vw;
 }
 
 #biopodz_header, #hitik_header, #thesis_header, #watch_header, #epee_header, #pen_header, #msi_header, #idrink_header {
@@ -273,11 +273,11 @@ a:visited {
 }
 
 #cosmet_text, #sharpwave_text, #cs230_text, #biopodz_text, #hitik_text, #thesis_text, #watch_text, #epee_text, #pen_text, #msi_text, #archviz_text, #idrink_text {
-
+ font-size: 1.6vw;
 }
 
 #cosmet_desc, #sharpwave_desc, #cs230_desc, #biopodz_desc, #hitik_desc, #thesis_desc, #watch_desc, #epee_desc, #pen_desc, #msi_desc, #archviz_desc, #idrink_desc {
-  font-size: 2vw;
+  font-size: 1.6vw;
   font-weight: 600;
 }
 
@@ -687,7 +687,12 @@ transition: all .2s ease-in-out;
 @media screen and (max-width: 920px) {
 
   #outer-grid {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    display: inline;
   }
 
   #footer-outer-grid {
@@ -773,5 +778,15 @@ transition: all .2s ease-in-out;
       height: auto;
     }
   } */
+
+  /* Portrait and Landscape */
+/* @media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+} */
+  
+
 
 }
