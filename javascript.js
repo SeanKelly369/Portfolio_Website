@@ -56,7 +56,7 @@ function maxText() {
     document.getElementById('outer-grid').style.gridTemplateColumns = "1fr";
 
 
-    console.log(document.getElementById('cosmet_desc').style.fontSize = '5.6vw');
+    console.log(document.getElementById('cosmet_desc').style.fontSize = '3.6vw');
     document.getElementById('sharpwave_desc').style.fontSize = '3.6vw'; 
     document.getElementById('cs230_desc').style.fontSize = '3.6vw';
     document.getElementById('biopodz_desc').style.fontSize = '3.6vw';

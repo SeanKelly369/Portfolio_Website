@@ -689,7 +689,7 @@ transition: all .2s ease-in-out;
 
   #outer-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   /* .container {
